@@ -1411,53 +1411,85 @@ if (xP== 28) {  // if in Column 2
     myGLCD.fillCircle(42, 260, 2); // Dot 67
      }      
   }
-// ************************ Done to here *******************************
+
 } else
 if (xP== 424) {  // if in Column 7
 
-  if (yP== 66) { // dot 33
-      if (dot[30] == 1) {  // Check if dot 30 gobbled already
-  	myGLCD.fillCircle(275, 60, 2); // dot 30
+  if (yP== 66) { // dot 49
+      if (dot[46] == 1) {  // Check if dot 46 gobbled already
+  	myGLCD.fillCircle(436, 60, 2); // Dot 46
      }   
-      if (dot[35] == 1) {  // Check if dot 35 gobbled already
-  	myGLCD.fillCircle(275, 100, 2); // dot 35
+      if (dot[51] == 1) {  // Check if dot 51 gobbled already
+  	myGLCD.fillCircle(435, 100, 2); // Dot 51
      }   
   } else
-  if (yP== 86) { // dot 35
-      if (dot[33] == 1) {  // Check if dot 33 gobbled already
-  	myGLCD.fillCircle(275, 80, 2); // dot 33
+  if (yP== 86) { // dot 51
+      if (dot[49] == 1) {  // Check if dot 49 gobbled already
+  	myGLCD.fillCircle(435, 80, 2); // Dot 49
      }  
-      if (dot[37] == 1) {  // Check if dot 37 gobbled already
-  	myGLCD.fillCircle(275, 120, 2); // dot 37
+      if (dot[53] == 1) {  // Check if dot 53 gobbled already
+  	myGLCD.fillCircle(435, 120, 2); // Dot 53
      }     
   } else
-  if (yP== 106) { // dot 37
-      if (dot[35] == 1) {  // Check if dot 35 gobbled already
-  	myGLCD.fillCircle(275, 100, 2); // dot 35
+  if (yP== 106) { // dot 53
+      if (dot[51] == 1) {  // Check if dot 51 gobbled already
+  	myGLCD.fillCircle(435, 100, 2); // Dot 51
      }  
-      if (dot[39] == 1) {  // Check if dot 39 gobbled already
-  	myGLCD.fillCircle(275, 140, 2); // dot 39
+      if (dot[55] == 1) {  // Check if dot 55 gobbled already
+  	myGLCD.fillCircle(435, 140, 2); // Dot 55
      }      
   } else
-  if (yP== 126) { // dot 39
-      if (dot[37] == 1) {  // Check if dot 37 gobbled already
-  	myGLCD.fillCircle(275, 120, 2); // dot 37
+  if (yP== 126) { // dot 55
+      if (dot[53] == 1) {  // Check if dot 53 gobbled already
+  	myGLCD.fillCircle(435, 120, 2); // Dot 53
      }
-     if (dot[41] == 1) {  // Check if dot 41 gobbled already
-	  myGLCD.fillCircle(275, 160, 2); // dot 41
+     if (dot[57] == 1) {  // Check if dot 57 gobbled already
+	  myGLCD.fillCircle(435, 160, 2); // Dot 57
      }       
   } else
-  if (yP== 146) { // dot 41
-      if (dot[39] == 1) {  // Check if dot 39 gobbled already
-  	myGLCD.fillCircle(275, 140, 2); // dot 39
+  if (yP== 146) { // dot 57
+      if (dot[55] == 1) {  // Check if dot 55 gobbled already
+  	myGLCD.fillCircle(435, 140, 2); // Dot 55
      } 
-     if (dot[53] == 1) {  // Check if dot 53 gobbled already
-	  myGLCD.fillCircle(275, 181, 2); // dot 53
+     if (dot[59] == 1) {  // Check if dot 59 gobbled already
+	  myGLCD.fillCircle(435, 180, 2); // Dot 59
      }     
-  } 
+  } else
+  if (yP== 166) { // dot 59
+      if (dot[57] == 1) {  // Check if dot 57 gobbled already
+    myGLCD.fillCircle(435, 160, 2); // Dot 57
+     }  
+      if (dot[61] == 1) {  // Check if dot 61 gobbled already
+    myGLCD.fillCircle(435, 200, 2); // Dot 61
+     }     
+  } else
+  if (yP== 186) { // dot 61
+      if (dot[59] == 1) {  // Check if dot 59 gobbled already
+    myGLCD.fillCircle(435, 180, 2); // Dot 59
+     }  
+      if (dot[63] == 1) {  // Check if dot 63 gobbled already
+    myGLCD.fillCircle(435, 220, 2); // Dot 63
+     }      
+  } else
+  if (yP== 206) { // dot 63
+      if (dot[61] == 1) {  // Check if dot 61 gobbled already
+    myGLCD.fillCircle(435, 200, 2); // Dot 61
+     }
+     if (dot[65] == 1) {  // Check if dot 65 gobbled already
+    myGLCD.fillCircle(435, 240, 2); // Dot 65
+     }       
+  } else
+  if (yP== 226) { // dot 65
+      if (dot[63] == 1) {  // Check if dot 63 gobbled already
+    myGLCD.fillCircle(435, 220, 2); // Dot 63
+     } 
+     if (dot[84] == 1) {  // Check if dot 84 gobbled already
+    myGLCD.fillCircle(436, 260, 2); // Dot 84
+     }     
+  }
 }
 
-
+// ************************ Done to here *******************************
 
   
 // increment Pacman Graphic Flag 0 = Closed, 1 = Medium Open, 2 = Wide Open
