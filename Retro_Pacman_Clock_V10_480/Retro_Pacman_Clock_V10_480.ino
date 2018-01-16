@@ -472,8 +472,8 @@ if (yP== 4) {  // if in Row 1 **************************************************
       if (dot[4] == 1) {  // Check if dot 4 gobbled already
   	myGLCD.fillCircle(88, 19, 2); // dot 4
      } 
-      if (dot[20] == 1) {  // Check if dot 14 gobbled already
-  	myGLCD.fillCircle(77, 40, 2); // dot 14
+      if (dot[20] == 1) {  // Check if dot 20 gobbled already
+  	myGLCD.fillCircle(77, 40, 2);  // dot 20
      }   
   } else
   if (xP== 74) { // dot 4
@@ -483,8 +483,8 @@ if (yP== 4) {  // if in Row 1 **************************************************
       if (dot[5] == 1) {  // Check if dot 5 gobbled already
   	myGLCD.fillCircle(112, 19, 2); // dot 5
      }   
-      if (dot[20] == 1) {  // Check if dot 14 gobbled already
-  	myGLCD.fillCircle(77, 40, 2); // dot 14
+      if (dot[20] == 1) {  // Check if dot 20 gobbled already
+  	myGLCD.fillCircle(77, 40, 2);  // dot 20
      }    
   } else
   if (xP== 98) { // dot 5
@@ -506,12 +506,12 @@ if (yP== 4) {  // if in Row 1 **************************************************
  
 
  if (xP== 168) { // dot 7
-      if (dot[22] == 1) {  // Check if dot 16 gobbled already
-  	myGLCD.fillCircle(183, 40, 2); // dot 16
+      if (dot[22] == 1) {  // Check if dot 22 gobbled already
+  	myGLCD.fillCircle(183, 40, 2);  // dot 22
      }    
       if (dot[8] == 1) {  // Check if dot 8 gobbled already
   	myGLCD.fillCircle(206, 19, 2); // dot 8
-     }     
+     }    
   } else
   if (xP== 192) { // dot 8
       if (dot[7] == 1) {  // Check if dot 7 gobbled already
@@ -528,9 +528,9 @@ if (yP== 4) {  // if in Row 1 **************************************************
       if (dot[8] == 1) {  // Check if dot 8 gobbled already
   	myGLCD.fillCircle(206, 19, 2); // dot 8
      }      
-      if (dot[23] == 1) {  // Check if dot 17 gobbled already
-  	myGLCD.fillCircle(241, 40, 2); // dot 17
-     }   
+      if (dot[23] == 1) {  // Check if dot 23 gobbled already
+  	myGLCD.fillCircle(241, 40, 2);  // dot 23
+     }    
  } else
   if (xP== 238) { // dot 10
       if (dot[11] == 1) {  // Check if dot 11 gobbled already
@@ -539,8 +539,8 @@ if (yP== 4) {  // if in Row 1 **************************************************
       if (dot[9] == 1) {  // Check if dot 9 gobbled already
   	myGLCD.fillCircle(229, 19, 2); // dot 9
      }      
-      if (dot[23] == 1) {  // Check if dot 17 gobbled already
-  	myGLCD.fillCircle(241, 40, 2); // dot 17
+      if (dot[23] == 1) {  // Check if dot 23 gobbled already
+  	myGLCD.fillCircle(241, 40, 2);  // dot 23
      }   
   } else
   if (xP== 424) { // dot 11
@@ -555,577 +555,863 @@ if (yP== 4) {  // if in Row 1 **************************************************
       if (dot[11] == 1) {  // Check if dot 11 gobbled already
   	myGLCD.fillCircle(275, 19, 2); // dot 11
      }    
-      if (dot[24] == 1) {  // Check if dot 18 gobbled already
-  	myGLCD.fillCircle(298, 40, 7); // dot 18
+      if (dot[24] == 1) {  // Check if dot 24 gobbled already
+  	myGLCD.fillCircle(298, 40, 2);  // dot 24
      }  
   }
 } else 
 if (yP== 26) {  // if in Row 2  **********************************************************
-  if (xP== 4) { // dot 13
+  if (xP== 4) { // dot 19
      if (dot[1] == 1) {  // Check if dot 1 gobbled already
 	  myGLCD.fillCircle(19, 19, 2); // dot 1
      }    
-      if (dot[19] == 1) {  // Check if dot 19 gobbled already
-  	myGLCD.fillCircle(19, 60, 2); //  dot 19
+      if (dot[28] == 1) {  // Check if dot 28 gobbled already
+  	myGLCD.fillCircle(19, 60, 2); // Dot 28
      }   
   } else
   
-    if (xP== 62) { // dot 14
+    if (xP== 62) { // dot 20
       if (dot[3] == 1) {  // Check if dot 3 gobbled already
   	myGLCD.fillCircle(65, 19, 2); // dot 3
      }   
          if (dot[4] == 1) {  // Check if dot 4 gobbled already
   	myGLCD.fillCircle(88, 19, 2); // dot 4
      } 
-         if (dot[21] == 1) {  // Check if dot 21 gobbled already
-  	myGLCD.fillCircle(65, 60, 2); // dot 21
+         if (dot[30] == 1) {  // Check if dot 30 gobbled already
+  	myGLCD.fillCircle(65, 60, 2); //Dot 30
      }   
-      if (dot[22] == 1) {  // Check if dot 22 gobbled already
-  	myGLCD.fillCircle(88, 60, 2); // dot 22
+      if (dot[31] == 1) {  // Check if dot 31 gobbled already
+  	myGLCD.fillCircle(88, 60, 2); // Dot 31
      }    
      
   } else
   
-  if (xP== 120) { // dot 15
-     if (dot[24] == 1) {  // Check if dot 24 gobbled already
-  	myGLCD.fillCircle(136, 60, 2); // dot 24
+  if (xP== 120) { // dot 21
+     if (dot[33] == 1) {  // Check if dot 33 gobbled already
+  	myGLCD.fillCircle(136, 60, 2); // Dot 33
      }    
       if (dot[6] == 1) {  // Check if dot 6 gobbled already
   	myGLCD.fillCircle(136, 19, 2); // dot 6
      }      
   } else
-  if (xP== 168) { // dot 16
+  if (xP== 168) { // dot 22
       if (dot[7] == 1) {  // Check if dot 7 gobbled already
   	myGLCD.fillCircle(183, 19, 2); // dot 7
      }    
-      if (dot[26] == 1) {  // Check if dot 26 gobbled already
-  	myGLCD.fillCircle(183, 60, 2); // dot 26
-     }          
+      if (dot[35] == 1) {  // Check if dot 35 gobbled already
+  	myGLCD.fillCircle(183, 60, 2); // Dot 35
+     }         
   } else
-    if (xP== 228) { // dot 17
+    if (xP== 228) { // dot 23
       if (dot[9] == 1) {  // Check if dot 9 gobbled already
   	myGLCD.fillCircle(229, 19, 2); // dot 9
      }      
        if (dot[10] == 1) {  // Check if dot 10 gobbled already
   	myGLCD.fillCircle(252, 19, 2); // dot 10
      }  
-      if (dot[28] == 1) {  // Check if dot 28 gobbled already
-	  myGLCD.fillCircle(229, 60, 2); // dot 28
+      if (dot[37] == 1) {  // Check if dot 37 gobbled already
+	  myGLCD.fillCircle(229, 60, 2); // Dot 37
      }  
-       if (dot[29] == 1) {  // Check if dot 29 gobbled already
-  	myGLCD.fillCircle(252, 60, 2); // dot 29
-     }     
+       if (dot[38] == 1) {  // Check if dot 38 gobbled already
+  	myGLCD.fillCircle(252, 60, 2); // Dot 38
+     }      
      
   } else
-  if (xP== 448) { // dot 18
-      if (dot[31] == 1) {  // Check if dot 31 gobbled already
-  	myGLCD.fillCircle(298, 60, 2); // dot 31
-     }    
+  if (xP== 284) { // dot 24
       if (dot[12] == 1) {  // Check if dot 12 gobbled already
-  	myGLCD.fillCircle(298, 19, 2); // dot 12
+  	myGLCD.fillCircle(298, 19, 2);  // dot 12
+     }    
+      if (dot[40] == 1) {  // Check if dot 40 gobbled already
+  	myGLCD.fillCircle(298, 60, 2); // Dot 40
+     }// ****************** Add decisions Larry ********************   
+  } else
+  if (xP== 332) { // dot 25
+      if (dot[13] == 1) {  // Check if dot 13 gobbled already
+   myGLCD.fillCircle(345, 19, 2);  // dot 13
+     }    
+      if (dot[42] == 1) {  // Check if dot 42 gobbled already
+    myGLCD.fillCircle(344, 60, 2); // Dot 42
+     }       
+  } else
+    if (xP== 392) { // dot 26
+      if (dot[15] == 1) {  // Check if dot 15 gobbled already
+    myGLCD.fillCircle(391, 19, 2);  // dot 15
+     }      
+       if (dot[16] == 1) {  // Check if dot 16 gobbled already
+    myGLCD.fillCircle(414, 19, 2);  // dot 16
      }  
+      if (dot[44] == 1) {  // Check if dot 44 gobbled already
+    myGLCD.fillCircle(390, 60, 2); // Dot 44
+     }  
+       if (dot[45] == 1) {  // Check if dot 45 gobbled already
+    myGLCD.fillCircle(413, 60, 2); // Dot 45
+     }     
+       
+  } else
+  if (xP== 448) { // dot 27
+      if (dot[18] == 1) {  // Check if dot 18 gobbled already
+    myGLCD.fillCircle(460, 19, 2);  // dot 18
+     }    
+      if (dot[47] == 1) {  // Check if dot 47 gobbled already
+    myGLCD.fillCircle(459, 60, 2); //Dot 47 
+     }   
   }
 } else
 if (yP== 46) {  // if in Row 3  **********************************************************
-  if (xP== 4) { // dot 19
-     if (dot[20] == 1) {  // Check if dot 20 gobbled already
-	  myGLCD.fillCircle(42, 60, 2); // dot 20
+  if (xP== 4) { // dot 28
+     if (dot[19] == 1) {  // Check if dot 19 gobbled already
+	  myGLCD.fillCircle(19, 40, 7); // Big dot 19
      }    
-      if (dot[13] == 1) {  // Check if dot 13 gobbled already
-  	myGLCD.fillCircle(19, 40, 7); // Big dot 13
+      if (dot[29] == 1) {  // Check if dot 29 gobbled already
+  	myGLCD.fillCircle(42, 60, 2); // Dot 29
      }  
   } else
-  if (xP== 28) { // dot 20
-     if (dot[19] == 1) {  // Check if dot 19 gobbled already
-  	myGLCD.fillCircle(19, 60, 2); // dot 19
+  if (xP== 28) { // dot 29
+     if (dot[28] == 1) {  // Check if dot 28 gobbled already
+  	myGLCD.fillCircle(19, 60, 2); // Dot 28
      }    
-      if (dot[21] == 1) {  // Check if dot 21 gobbled already
-  	myGLCD.fillCircle(65, 60, 2); // dot 21
+      if (dot[48] == 1) {  // Check if dot 48 gobbled already
+  	myGLCD.fillCircle(42, 80, 2); // Dot 48
      }   
-      if (dot[32] == 1) {  // Check if dot 32 gobbled already
-  	myGLCD.fillCircle(42, 80, 2); // dot 32
+      if (dot[30] == 1) {  // Check if dot 30 gobbled already
+  	myGLCD.fillCircle(65, 60, 2); //Dot 30
      }    
   } else
-  if (xP== 52) { // dot 21
-     if (dot[20] == 1) {  // Check if dot 20 gobbled already
-	  myGLCD.fillCircle(42, 60, 2); // dot 20
+  if (xP== 52) { // dot 30
+     if (dot[29] == 1) {  // Check if dot 29 gobbled already
+	 myGLCD.fillCircle(42, 60, 2); // Dot 29
      }    
-      if (dot[22] == 1) {  // Check if dot 22 gobbled already
-  	myGLCD.fillCircle(88, 60, 2); // dot 22
+      if (dot[20] == 1) {  // Check if dot 20 gobbled already
+  	myGLCD.fillCircle(77, 40, 2);  // dot 20
      } 
-      if (dot[14] == 1) {  // Check if dot 14 gobbled already
-  	myGLCD.fillCircle(77, 40, 2); // dot 14
+      if (dot[31] == 1) {  // Check if dot 31 gobbled already
+  	myGLCD.fillCircle(88, 60, 2); // Dot 31
      }         
   } else
-  if (xP== 74) { // dot 22
-      if (dot[21] == 1) {  // Check if dot 21 gobbled already
-  	myGLCD.fillCircle(65, 60, 2); // dot 21
+  if (xP== 74) { // dot 31
+      if (dot[30] == 1) {  // Check if dot 30 gobbled already
+  	myGLCD.fillCircle(65, 60, 2); //Dot 30
      }    
-      if (dot[23] == 1) {  // Check if dot 23 gobbled already
-  	myGLCD.fillCircle(112, 60, 2); // dot 23
+      if (dot[20] == 1) {  // Check if dot 20 gobbled already
+  	myGLCD.fillCircle(241, 40, 2);  // dot 23
      } 
-      if (dot[14] == 1) {  // Check if dot 14 gobbled already
-  	myGLCD.fillCircle(77, 40, 2); // dot 14
-     }    
+      if (dot[32] == 1) {  // Check if dot 32 gobbled already
+  	myGLCD.fillCircle(112, 60, 2); // Dot 32
+     }   
   } else
-  if (xP== 98) { // dot 23
-     if (dot[24] == 1) {  // Check if dot 24 gobbled already
-	  myGLCD.fillCircle(136, 60, 2); // dot 24
+  if (xP== 98) { // dot 32
+     if (dot[31] == 1) {  // Check if dot 31 gobbled already
+	  myGLCD.fillCircle(88, 60, 2); // Dot 31
      }    
-      if (dot[22] == 1) {  // Check if dot 22 gobbled already
-  	myGLCD.fillCircle(88, 60, 2); // dot 22
+      if (dot[33] == 1) {  // Check if dot 33 gobbled already
+  	myGLCD.fillCircle(136, 60, 2); // Dot 33
      }  
     
   } else
-  if (xP== 120) { // dot 24
-      if (dot[25] == 1) {  // Check if dot 25 gobbled already
-  	myGLCD.fillCircle(160, 60, 2); // dot 25
+  if (xP== 120) { // dot 33
+      if (dot[21] == 1) {  // Check if dot 21 gobbled already
+  	myGLCD.fillCircle(136, 40, 2);  // dot 21
      }    
-      if (dot[23] == 1) {  // Check if dot 23 gobbled already
-  	myGLCD.fillCircle(112, 60, 2); // dot 23
+      if (dot[32] == 1) {  // Check if dot 32 gobbled already
+  	myGLCD.fillCircle(112, 60, 2); // Dot 32
      }
-      if (dot[15] == 1) {  // Check if dot 15 gobbled already
-  	myGLCD.fillCircle(136, 40, 2); // dot 15
+      if (dot[34] == 1) {  // Check if dot 34 gobbled already
+  	myGLCD.fillCircle(160, 60, 2); // Dot 34
      }        
   } else
-  if (xP== 146) { // dot 25
-     if (dot[24] == 1) {  // Check if dot 24 gobbled already
-	  myGLCD.fillCircle(136, 60, 2); // dot 24
+  if (xP== 146) { // dot 34
+     if (dot[33] == 1) {  // Check if dot 33 gobbled already
+	  myGLCD.fillCircle(136, 60, 2); // Dot 33
      }    
-      if (dot[26] == 1) {  // Check if dot 26 gobbled already
-  	myGLCD.fillCircle(183, 60, 2); // dot 26
+      if (dot[35] == 1) {  // Check if dot 35 gobbled already
+  	myGLCD.fillCircle(183, 60, 2); // Dot 35
      }    
   } else
-  if (xP== 168) { // dot 26
-      if (dot[25] == 1) {  // Check if dot 25 gobbled already
-  	myGLCD.fillCircle(160, 60, 2); // dot 25
+  if (xP== 168) { // dot 35
+      if (dot[34] == 1) {  // Check if dot 34 gobbled already
+  	myGLCD.fillCircle(160, 60, 2); // Dot 34
      }    
-      if (dot[27] == 1) {  // Check if dot 27 gobbled already
-  	myGLCD.fillCircle(206, 60, 2); // dot 27
+      if (dot[22] == 1) {  // Check if dot 22 gobbled already
+  	myGLCD.fillCircle(183, 40, 2);  // dot 22
      }
-      if (dot[16] == 1) {  // Check if dot 16 gobbled already
-  	myGLCD.fillCircle(183, 40, 2); // dot 16
+      if (dot[36] == 1) {  // Check if dot 36 gobbled already
+  	myGLCD.fillCircle(206, 60, 2); // Dot 36
      }    
   } else
-  if (xP== 192) { // dot 27
-     if (dot[28] == 1) {  // Check if dot 28 gobbled already
-	  myGLCD.fillCircle(229, 60, 2); // dot 28
+  if (xP== 192) { // dot 36
+     if (dot[35] == 1) {  // Check if dot 35 gobbled already
+	  myGLCD.fillCircle(183, 60, 2); // Dot 35
      }    
-      if (dot[26] == 1) {  // Check if dot 26 gobbled already
-  	myGLCD.fillCircle(183, 60, 2); // dot 26
+      if (dot[37] == 1) {  // Check if dot 37 gobbled already
+  	myGLCD.fillCircle(229, 60, 2); // Dot 37
      }      
   } else
-  if (xP== 216) { // dot 28
-      if (dot[29] == 1) {  // Check if dot 29 gobbled already
+  if (xP== 216) { // dot 37
+      if (dot[36] == 1) {  // Check if dot 29 gobbled already
   	myGLCD.fillCircle(252, 60, 2); // dot 29
      }    
-      if (dot[27] == 1) {  // Check if dot 27 gobbled already
+      if (dot[23] == 1) {  // Check if dot 27 gobbled already
   	myGLCD.fillCircle(206, 60, 2); // dot 27
      }      
-      if (dot[17] == 1) {  // Check if dot 17 gobbled already
+      if (dot[38] == 1) {  // Check if dot 17 gobbled already
   	myGLCD.fillCircle(241, 40, 2); // dot 17
+     }  
+  } else
+  if (xP== 238) { // dot 38
+     if (dot[37] == 1) {  // Check if dot 37 gobbled already
+	  myGLCD.fillCircle(229, 60, 2); // Dot 37
+     }    
+      if (dot[23] == 1) {  // Check if dot 23 gobbled already
+  	myGLCD.fillCircle(241, 40, 2);  // dot 23
+     }      
+      if (dot[39] == 1) {  // Check if dot 39 gobbled already
+  	myGLCD.fillCircle(275, 60, 2); // Dot 39
+     }    
+
+  } else
+  if (xP== 262) { // dot 39
+      if (dot[38] == 1) {  // Check if dot 38 gobbled already
+  	myGLCD.fillCircle(252, 60, 2); // Dot 38
+     }    
+      if (dot[40] == 1) {  // Check if dot 40 gobbled already
+  	myGLCD.fillCircle(298, 60, 2); // Dot 40
+     }      
+  } else
+  if (xP== 284) { // dot 40
+   if (dot[39] == 1) {  // Check if dot 39 gobbled already
+    myGLCD.fillCircle(275, 60, 2); // Dot 39
+   }
+   if (dot[24] == 1) {  // Check if dot 24 gobbled already
+  	myGLCD.fillCircle(298, 40, 2);  // dot 24
+   }     
+   if (dot[41] == 1) {  // Check if dot 41 gobbled already
+  	myGLCD.fillCircle(321, 60, 2); // Dot 41
+   } // ***************** Add Decisions Larry ***************
+  }else
+  if (xP== 310) { // dot 41
+     if (dot[40] == 1) {  // Check if dot 40 gobbled already
+   myGLCD.fillCircle(298, 60, 2); // Dot 40 
+     }    
+      if (dot[42] == 1) {  // Check if dot 42 gobbled already
+    myGLCD.fillCircle(344, 60, 2); // Dot 42
+     }        
+  } else
+  if (xP== 332) { // dot 42
+      if (dot[25] == 1) {  // Check if dot 25 gobbled already
+    myGLCD.fillCircle(160, 60, 2); // dot 25
+     }    
+      if (dot[41] == 1) {  // Check if dot 41 gobbled already
+    myGLCD.fillCircle(321, 60, 2); // Dot 41
+     }
+      if (dot[43] == 1) {  // Check if dot 43 gobbled already
+    myGLCD.fillCircle(367, 60, 2); // Dot 43
      }   
   } else
-  if (xP== 238) { // dot 29
-     if (dot[28] == 1) {  // Check if dot 28 gobbled already
-	  myGLCD.fillCircle(229, 60, 2); // dot 28
+  if (xP== 356) { // dot 43
+     if (dot[42] == 1) {  // Check if dot 42 gobbled already
+    myGLCD.fillCircle(344, 60, 2); // Dot 42
      }    
-      if (dot[30] == 1) {  // Check if dot 30 gobbled already
-  	myGLCD.fillCircle(275, 60, 2); // dot 30
+      if (dot[44] == 1) {  // Check if dot 44 gobbled already
+    myGLCD.fillCircle(390, 60, 2); // Dot 44
      }      
-      if (dot[17] == 1) {  // Check if dot 17 gobbled already
-  	myGLCD.fillCircle(241, 40, 2); // dot 17
+  } else
+  if (xP== 380) { // dot 44
+      if (dot[43] == 1) {  // Check if dot 43 gobbled already
+    myGLCD.fillCircle(367, 60, 2); // Dot 43
+     }    
+      if (dot[45] == 1) {  // Check if dot 45 gobbled already
+    myGLCD.fillCircle(413, 60, 2); // Dot 45
+     }       
+      if (dot[26] == 1) {  // Check if dot 26 gobbled already
+    myGLCD.fillCircle(406, 40, 2);  // dot 26
+     }   
+  } else
+  if (xP== 402) { // dot 45
+     if (dot[26] == 1) {  // Check if dot 28 gobbled already
+    myGLCD.fillCircle(229, 60, 2); // dot 28
+     }    
+      if (dot[44] == 1) {  // Check if dot 44 gobbled already
+    myGLCD.fillCircle(390, 60, 2); // Dot 44
+     }      
+      if (dot[46] == 1) {  // Check if dot 46 gobbled already
+    myGLCD.fillCircle(436, 60, 2); // Dot 46
      }   
    
   } else
-  if (xP== 424) { // dot 30
-      if (dot[29] == 1) {  // Check if dot 29 gobbled already
-  	myGLCD.fillCircle(252, 60, 2); // dot 29
+  if (xP== 424) { // dot 46
+      if (dot[45] == 1) {  // Check if dot 45 gobbled already
+    myGLCD.fillCircle(413, 60, 2); // Dot 45
      }    
-      if (dot[33] == 1) {  // Check if dot 33 gobbled already
-  	myGLCD.fillCircle(275, 80, 2); // dot 33
+      if (dot[49] == 1) {  // Check if dot 40 gobbled already
+    myGLCD.fillCircle(298, 60, 2); // Dot 40
      }      
-      if (dot[31] == 1) {  // Check if dot 31 gobbled already
-  	myGLCD.fillCircle(298, 60, 2); // dot 31
+      if (dot[47] == 1) {  // Check if dot 47 gobbled already
+    myGLCD.fillCircle(459, 60, 2); //Dot 47
      }  
   
   } else
-  if (xP== 448) { // dot 31
-   if (dot[18] == 1) {  // Check if dot 18 gobbled already
-  	myGLCD.fillCircle(298, 40, 7); // dot 18
+  if (xP== 448) { // dot 47
+   if (dot[27] == 1) {  // Check if dot 27 gobbled already
+    myGLCD.fillCircle(465, 40, 7); // Big dot 27
    }     
-   if (dot[30] == 1) {  // Check if dot 30 gobbled already
-  	myGLCD.fillCircle(275, 60, 2); // dot 30
+   if (dot[46] == 1) {  // Check if dot 46 gobbled already
+    myGLCD.fillCircle(436, 60, 2); // Dot 46
    } 
   }
 } else
 
 if (yP== 248) {  // if in Row 4  **********************************************************
-  if (xP== 4) { // dot 42
-     if (dot[43] == 1) {  // Check if dot 43 gobbled already
-	  myGLCD.fillCircle(42, 181, 2); // dot 43
+  if (xP== 4) { // dot 66
+     if (dot[86] == 1) {  // Check if dot 86 gobbled already
+	  myGLCD.fillCircle(19, 281, 7); // Big dot 86
      }     
-     if (dot[55] == 1) {  // Check if dot 55 gobbled already
-	  myGLCD.fillCircle(19, 201, 7); // dot 55
+     if (dot[67] == 1) {  // Check if dot 67 gobbled already
+	  myGLCD.fillCircle(42, 260, 2); // Dot 67
      }     
   } else
-  if (xP== 28) { // dot 43
-     if (dot[42] == 1) {  // Check if dot 42 gobbled already
-	  myGLCD.fillCircle(19, 181, 2); // dot 42
+  if (xP== 28) { // dot 67
+     if (dot[66] == 1) {  // Check if dot 66 gobbled already
+	  myGLCD.fillCircle(19, 260, 2); // Dot 66
      }     
-     if (dot[44] == 1) {  // Check if dot 44 gobbled already
-	  myGLCD.fillCircle(65, 181, 2); // dot 44
+     if (dot[64] == 1) {  // Check if dot 64 gobbled already
+	  myGLCD.fillCircle(42, 240, 2); // Dot 64
      }   
-      if (dot[40] == 1) {  // Check if dot 40 gobbled already
-  	myGLCD.fillCircle(42, 160, 2); // dot 40
+      if (dot[68] == 1) {  // Check if dot 68 gobbled already
+  	myGLCD.fillCircle(65, 260, 2); // Dot 68
      }       
   } else
-  if (xP== 52) { // dot 44
-     if (dot[43] == 1) {  // Check if dot 43 gobbled already
-	  myGLCD.fillCircle(42, 181, 2); // dot 43
+  if (xP== 52) { // dot 68
+     if (dot[67] == 1) {  // Check if dot 67 gobbled already
+	  myGLCD.fillCircle(42, 260, 2); // Dot 67
      }     
-     if (dot[45] == 1) {  // Check if dot 45 gobbled already
-	  myGLCD.fillCircle(88, 181, 2); // dot 45
+     if (dot[87] == 1) {  // Check if dot 87 gobbled already
+	  myGLCD.fillCircle(77, 281, 2); // Dot 87
      } 
-     if (dot[56] == 1) {  // Check if dot 56 gobbled already
-	  myGLCD.fillCircle(77, 201, 2); // dot 56 
-     }    
+     if (dot[69] == 1) {  // Check if dot 69 gobbled already
+	  myGLCD.fillCircle(88, 260, 2); // Dot 69
+     }  
   } else
-  if (xP== 74) { // dot 45
-     if (dot[46] == 1) {  // Check if dot 46 gobbled already
-	  myGLCD.fillCircle(112, 181, 2); // dot 46
+  if (xP== 74) { // dot 69
+     if (dot[68] == 1) {  // Check if dot 68 gobbled already
+	  myGLCD.fillCircle(65, 260, 2); // Dot 68
      }     
-     if (dot[44] == 1) {  // Check if dot 44 gobbled already
-	  myGLCD.fillCircle(65, 181, 2); // dot 44
+     if (dot[87] == 1) {  // Check if dot 87 gobbled already
+	  myGLCD.fillCircle(77, 281, 2); // Dot 87
      } 
-     if (dot[56] == 1) {  // Check if dot 56 gobbled already
-	  myGLCD.fillCircle(77, 201, 2); // dot 56 
+     if (dot[70] == 1) {  // Check if dot 70 gobbled already
+	  myGLCD.fillCircle(112, 260, 2); // Dot 70 
      }    
      
   } else
-  if (xP== 98) { // dot 46
-     if (dot[47] == 1) {  // Check if dot 47 gobbled already
-	  myGLCD.fillCircle(136, 181, 2); // dot 47
+  if (xP== 98) { // dot 70
+     if (dot[69] == 1) {  // Check if dot 69 gobbled already
+	  myGLCD.fillCircle(88, 260, 2); // Dot 69
      }     
-     if (dot[45] == 1) {  // Check if dot 45 gobbled already
-	  myGLCD.fillCircle(88, 181, 2); // dot 45
-     }  
+     if (dot[71] == 1) {  // Check if dot 71 gobbled already
+	  myGLCD.fillCircle(136, 260, 2); // Dot 71
+     }   
   } else
-  if (xP== 120) { // dot 47
-     if (dot[48] == 1) {  // Check if dot 48 gobbled already
-	  myGLCD.fillCircle(160, 181, 2); // dot 48
+  if (xP== 120) { // dot 71
+     if (dot[70] == 1) {  // Check if dot 70 gobbled already
+	  myGLCD.fillCircle(112, 260, 2); // Dot 70
      }     
-     if (dot[46] == 1) {  // Check if dot 46 gobbled already
-	  myGLCD.fillCircle(112, 181, 2); // dot 46
+     if (dot[88] == 1) {  // Check if dot 88 gobbled already
+	  myGLCD.fillCircle(136, 281, 2); // Dot 88
      } 
-     if (dot[57] == 1) {  // Check if dot 57 gobbled already
-	  myGLCD.fillCircle(136, 201, 2); // dot 57 
+     if (dot[72] == 1) {  // Check if dot 72 gobbled already
+	  myGLCD.fillCircle(160, 260, 2); // Dot 72 
      }      
   } else
-  if (xP== 146) { // dot 48
-     if (dot[47] == 1) {  // Check if dot 47 gobbled already
-	  myGLCD.fillCircle(136, 181, 2); // dot 47
+  if (xP== 146) { // dot 72
+     if (dot[71] == 1) {  // Check if dot 71 gobbled already
+	  myGLCD.fillCircle(136, 260, 2); // Dot 71
      }     
-     if (dot[49] == 1) {  // Check if dot 49 gobbled already
-	  myGLCD.fillCircle(183, 181, 2); // dot 49
+     if (dot[73] == 1) {  // Check if dot 73 gobbled already
+	  myGLCD.fillCircle(183, 260, 2); // Dot 73
      }  
   } else
 
-  if (xP== 168) { // dot 49
-     if (dot[48] == 1) {  // Check if dot 48 gobbled already
-	  myGLCD.fillCircle(160, 181, 2); // dot 48
+  if (xP== 168) { // dot 73
+     if (dot[72] == 1) {  // Check if dot 72 gobbled already
+	  myGLCD.fillCircle(160, 260, 2); // Dot 72
      }     
-     if (dot[50] == 1) {  // Check if dot 50 gobbled already
-	  myGLCD.fillCircle(206, 181, 2); // dot 50
+     if (dot[89] == 1) {  // Check if dot 89 gobbled already
+	  myGLCD.fillCircle(183, 281, 2); // Dot 89
      } 
-     if (dot[58] == 1) {  // Check if dot 58 gobbled already
-	  myGLCD.fillCircle(183, 201, 2); // dot 58
+     if (dot[74] == 1) {  // Check if dot 74 gobbled already
+	  myGLCD.fillCircle(206, 260, 2);  // Dot 74
      }        
   } else
-  if (xP== 192) { // dot 50
-     if (dot[51] == 1) {  // Check if dot 51 gobbled already
-	  myGLCD.fillCircle(229, 181, 2); // dot 51
+  if (xP== 192) { // dot 74
+     if (dot[73] == 1) {  // Check if dot 73 gobbled already
+	  myGLCD.fillCircle(183, 260, 2); // Dot 73
      }     
-     if (dot[49] == 1) {  // Check if dot 49 gobbled already
-	  myGLCD.fillCircle(183, 181, 2); // dot 49
+     if (dot[75] == 1) {  // Check if dot 75 gobbled already
+	  myGLCD.fillCircle(229, 260, 2); // Dot 75
      }      
   } else
-  if (xP== 216) { // dot 51
-     if (dot[50] == 1) {  // Check if dot 50 gobbled already
-	  myGLCD.fillCircle(206, 181, 2); // dot 50
+  if (xP== 216) { // dot 75
+     if (dot[74] == 1) {  // Check if dot 74 gobbled already
+	  myGLCD.fillCircle(206, 260, 2);  // Dot 74
      }    
-     if (dot[52] == 1) {  // Check if dot 52 gobbled already
+     if (dot[90] == 1) {  // Check if dot 90 gobbled already
 	  myGLCD.fillCircle(252, 181, 2); // dot 52
      } 
-     if (dot[59] == 1) {  // Check if dot 59 gobbled already
-	  myGLCD.fillCircle(241, 201, 2); // dot 59
+     if (dot[76] == 1) {  // Check if dot 76 gobbled already
+	  myGLCD.fillCircle(252, 260, 2); // Dot 76
      }     
   } else
-  if (xP== 238) { // dot 52
-     if (dot[53] == 1) {  // Check if dot 53 gobbled already
+  if (xP== 238) { // dot 76
+     if (dot[75] == 1) {  // Check if dot 75 gobbled already
 	  myGLCD.fillCircle(275, 181, 2); // dot 53
      }    
-     if (dot[51] == 1) {  // Check if dot 51 gobbled already
-	  myGLCD.fillCircle(229, 181, 2); // dot 51
+     if (dot[90] == 1) {  // Check if dot 90 gobbled already
+	  myGLCD.fillCircle(241, 281, 2); // Dot 90
      }  
-     if (dot[59] == 1) {  // Check if dot 59 gobbled already
-	  myGLCD.fillCircle(241, 201, 2); // dot 59
+     if (dot[77] == 1) {  // Check if dot 77 gobbled already
+	  myGLCD.fillCircle(275, 260, 2); // Dot 77
      }     
   } else
  
 
-
-
-
- if (xP== 424) { // dot 53
-     if (dot[41] == 1) {  // Check if dot 41 gobbled already
-	  myGLCD.fillCircle(275, 160, 2); // dot 41
+ if (xP== 262) { // dot 77
+     if (dot[76] == 1) {  // Check if dot 76 gobbled already
+	  myGLCD.fillCircle(252, 260, 2); // Dot 76
      }    
-     if (dot[52] == 1) {  // Check if dot 52 gobbled already
-	  myGLCD.fillCircle(252, 181, 2); // dot 52
-     } 
-     if (dot[54] == 1) {  // Check if dot 54 gobbled already
-	  myGLCD.fillCircle(298, 181, 2); // dot 54
+     if (dot[78] == 1) {  // Check if dot 78 gobbled already
+	  myGLCD.fillCircle(298, 260, 2); // Dot 78
      }     
   } else
-  if (xP== 448) { // dot 54
-     if (dot[53] == 1) {  // Check if dot 53 gobbled already
-	  myGLCD.fillCircle(275, 181, 2); // dot 53
+  if (xP== 284) { // dot 78
+     if (dot[77] == 1) {  // Check if dot 77 gobbled already
+    myGLCD.fillCircle(275, 260, 2); // Dot 77
+     }
+     if (dot[91] == 1) {  // Check if dot 91 gobbled already
+	  myGLCD.fillCircle(298, 281, 2);  // dot 91
      }    
-     if (dot[60] == 1) {  // Check if dot 60 gobbled already
-	  myGLCD.fillCircle(298, 201, 7); // Big dot 60
+     if (dot[79] == 1) {  // Check if dot 79 gobbled already
+	  myGLCD.fillCircle(321, 260, 2); // Dot 79
+     } // ************************** Add decisions Larry *******************     
+  } else
+  if (xP== 310) { // dot 79
+     if (dot[78] == 1) {  // Check if dot 78 gobbled already
+   myGLCD.fillCircle(298, 260, 2); // Dot 78
+     }     
+     if (dot[80] == 1) {  // Check if dot 80 gobbled already
+    myGLCD.fillCircle(344, 260, 2); // Dot 80
+     }  
+  } else
+
+  if (xP== 332) { // dot 80
+     if (dot[79] == 1) {  // Check if dot 79 gobbled already
+    myGLCD.fillCircle(321, 260, 2); // Dot 79
+     }     
+     if (dot[92] == 1) {  // Check if dot 92 gobbled already
+    myGLCD.fillCircle(347, 281, 2); // Dot 92
+     } 
+     if (dot[81] == 1) {  // Check if dot 81 gobbled already
+   myGLCD.fillCircle(367, 260, 2); // Dot 81
+     }         
+  } else
+  if (xP== 356) { // dot 81
+     if (dot[80] == 1) {  // Check if dot 80 gobbled already
+    myGLCD.fillCircle(344, 260, 2); // Dot 80
+     }     
+     if (dot[82] == 1) {  // Check if dot 82 gobbled already
+    myGLCD.fillCircle(390, 260, 2); // Dot 82
      }      
+  } else
+  if (xP== 380) { // dot 82
+     if (dot[81] == 1) {  // Check if dot 81 gobbled already
+    myGLCD.fillCircle(367, 260, 2); // Dot 81
+     }    
+     if (dot[93] == 1) {  // Check if dot 93 gobbled already
+    myGLCD.fillCircle(406, 281, 2); // Dot 93
+     } 
+     if (dot[83] == 1) {  // Check if dot 83 gobbled already
+    myGLCD.fillCircle(413, 260, 2); // Dot 83
+     }    
+  } else
+  if (xP== 402) { // dot 83
+     if (dot[82] == 1) {  // Check if dot 82 gobbled already
+    myGLCD.fillCircle(390, 260, 2); // Dot 82
+     }    
+     if (dot[93] == 1) {  // Check if dot 93 gobbled already
+    myGLCD.fillCircle(406, 281, 2); // Dot 93
+     }  
+     if (dot[84] == 1) {  // Check if dot 84 gobbled already
+    myGLCD.fillCircle(436, 260, 2); // Dot 84
+     }     
+  } else
+ 
+
+ if (xP== 424) { // dot 84
+     if (dot[83] == 1) {  // Check if dot 83 gobbled already
+    myGLCD.fillCircle(413, 260, 2); // Dot 83
+     }    
+     if (dot[65] == 1) {  // Check if dot 65 gobbled already
+    myGLCD.fillCircle(435, 240, 2); // Dot 65
+     } 
+     if (dot[85] == 1) {  // Check if dot 85 gobbled already
+    myGLCD.fillCircle(459, 260, 2); // Dot 85
+     }     
+  } else
+  if (xP== 448) { // dot 85
+     if (dot[84] == 1) {  // Check if dot 84 gobbled already
+    myGLCD.fillCircle(436, 260, 2); // Dot 84
+     }    
+     if (dot[94] == 1) {  // Check if dot 94 gobbled already
+    myGLCD.fillCircle(465, 281, 7); // Big dot 94
+     }       
   } 
 
 } else
 if (yP== 268) {  // if in Row 5  **********************************************************
-  if (xP== 4) { // dot 55
-     if (dot[42] == 1) {  // Check if dot 42 gobbled already
-	  myGLCD.fillCircle(19, 181, 2); // dot 42
+  if (xP== 4) { // dot 86
+     if (dot[66] == 1) {  // Check if dot 66 gobbled already
+	  myGLCD.fillCircle(19, 260, 2); // Dot 66
      } 
-     if (dot[61] == 1) {  // Check if dot 61 gobbled already
-	  myGLCD.fillCircle(19, 221, 2); // dot 61
+     if (dot[95] == 1) {  // Check if dot 95 gobbled already
+	  myGLCD.fillCircle(19, 301, 2); // Dot 95
      }    
   } else
-   if (xP== 62) { // dot 56
-     if (dot[44] == 1) {  // Check if dot 44 gobbled already
-	  myGLCD.fillCircle(65, 181, 2); // dot 44
+   if (xP== 62) { // dot 87
+     if (dot[68] == 1) {  // Check if dot 68 gobbled already
+	  myGLCD.fillCircle(65, 260, 2); // Dot 68
      } 
-     if (dot[45] == 1) {  // Check if dot 45 gobbled already
-	  myGLCD.fillCircle(88, 181, 2); // dot 45
+     if (dot[69] == 1) {  // Check if dot 69 gobbled already
+	  myGLCD.fillCircle(88, 260, 2); // Dot 69
      } 
-     if (dot[63] == 1) {  // Check if dot 63 gobbled already
-	  myGLCD.fillCircle(65, 221, 2); // dot 63
+     if (dot[97] == 1) {  // Check if dot 97 gobbled already
+	  myGLCD.fillCircle(65, 301, 2); // Dot 97
      }
-     if (dot[64] == 1) {  // Check if dot 64 gobbled already
-	  myGLCD.fillCircle(88, 221, 2); // dot 64
+     if (dot[98] == 1) {  // Check if dot 98 gobbled already
+	  myGLCD.fillCircle(88, 301, 2); // Dot 98
      }      
      
   } else
   
-  if (xP== 120) { // dot 57
-     if (dot[47] == 1) {  // Check if dot 47 gobbled already
-	  myGLCD.fillCircle(136, 181, 2); // dot 47
+  if (xP== 120) { // dot 88
+     if (dot[71] == 1) {  // Check if dot 71 gobbled already
+	  myGLCD.fillCircle(136, 260, 2); // Dot 71
      }     
-     if (dot[66] == 1) {  // Check if dot 66 gobbled already
-	  myGLCD.fillCircle(136, 221, 2); // dot 66
+     if (dot[100] == 1) {  // Check if dot 100 gobbled already
+	  myGLCD.fillCircle(136, 301, 2); // Dot 100
      }    
   } else
-  if (xP== 168) { // dot 58
-     if (dot[67] == 1) {  // Check if dot 67 gobbled already
-	  myGLCD.fillCircle(183, 221, 2); // dot 67
+  if (xP== 168) { // dot 89
+     if (dot[73] == 1) {  // Check if dot 73 gobbled already
+	  myGLCD.fillCircle(183, 260, 2); // Dot 73
      }     
-     if (dot[49] == 1) {  // Check if dot 49 gobbled already
-	  myGLCD.fillCircle(183, 181, 2); // dot 49
+     if (dot[101] == 1) {  // Check if dot 101 gobbled already
+	  myGLCD.fillCircle(183, 301, 2); // Dot 101
      }       
   } else
   
-  if (xP== 228) { // dot 59
-     if (dot[51] == 1) {  // Check if dot 51 gobbled already
-	  myGLCD.fillCircle(229, 181, 2); // dot 51
+  if (xP== 228) { // dot 90
+     if (dot[75] == 1) {  // Check if dot 75 gobbled already
+	  myGLCD.fillCircle(229, 260, 2); // Dot 75
      }
-     if (dot[52] == 1) {  // Check if dot 52 gobbled already
-	  myGLCD.fillCircle(252, 181, 2); // dot 52
+     if (dot[76] == 1) {  // Check if dot 76 gobbled already
+	  myGLCD.fillCircle(252, 260, 2); // Dot 76
      } 
-     if (dot[69] == 1) {  // Check if dot 69 gobbled already
-	  myGLCD.fillCircle(229, 221, 2); // dot 69
+     if (dot[104] == 1) {  // Check if dot 104 gobbled already
+	  myGLCD.fillCircle(252, 301, 2); // Dot 104
      } 
-     if (dot[70] == 1) {  // Check if dot 70 gobbled already
-	  myGLCD.fillCircle(252, 221, 2); // dot 70
+     if (dot[105] == 1) {  // Check if dot 105 gobbled already
+	  myGLCD.fillCircle(275, 301, 2); // Dot 105
      }      
      
   } else
   
-  if (xP== 448) { // dot 60
-     if (dot[72] == 1) {  // Check if dot 72 gobbled already
-	  myGLCD.fillCircle(298, 221, 2); // Big dot 72
+  if (xP== 284) { // dot 91
+     if (dot[78] == 1) {  // Check if dot 78 gobbled already
+	  myGLCD.fillCircle(298, 260, 2); // Dot 78
      } 
-     if (dot[54] == 1) {  // Check if dot 54 gobbled already
-	  myGLCD.fillCircle(298, 181, 2); // dot 54
+     if (dot[106] == 1) {  // Check if dot 106 gobbled already
+	  myGLCD.fillCircle(298, 301, 2); // Dot 106
+     } // ********************* Added more decisions Larry ***************************   
+  }else
+  if (xP== 332) { // dot 92
+     if (dot[80] == 1) {  // Check if dot 80 gobbled already
+   myGLCD.fillCircle(344, 260, 2); // Dot 80
+     }     
+     if (dot[107] == 1) {  // Check if dot 107 gobbled already
+    myGLCD.fillCircle(345, 301, 2);  // dot 107
+     }       
+  } else
+  
+  if (xP== 356) { // dot 93
+     if (dot[82] == 1) {  // Check if dot 82 gobbled already
+    myGLCD.fillCircle(390, 260, 2); // Dot 82
+     }
+     if (dot[83] == 1) {  // Check if dot 83 gobbled already
+    myGLCD.fillCircle(413, 260, 2); // Dot 83
+     } 
+     if (dot[109] == 1) {  // Check if dot 109 gobbled already
+    myGLCD.fillCircle(391, 301, 2);  // dot 109
+     } 
+     if (dot[110] == 1) {  // Check if dot 110 gobbled already
+    myGLCD.fillCircle(414, 301, 2);  // dot 110
+     }      
+     
+  } else
+  
+  if (xP== 448) { // dot 94
+     if (dot[112] == 1) {  // Check if dot 112 gobbled already
+    myGLCD.fillCircle(460, 301, 2);  // dot 112
+     } 
+     if (dot[85] == 1) {  // Check if dot 85 gobbled already
+    myGLCD.fillCircle(459, 260, 2); // Dot 85
      }    
-  } 
+  }
 
 } else
 
 
 if (yP== 288) {  // if in Row 6  **********************************************************
-  if (xP== 4) { // dot 61
-     if (dot[55] == 1) {  // Check if dot 55 gobbled already
-	  myGLCD.fillCircle(19, 201, 7); // dot 55
+  if (xP== 4) { // dot 95
+     if (dot[86] == 1) {  // Check if dot 86 gobbled already
+	  myGLCD.fillCircle(19, 281, 7); // Big dot 86
      } 
-     if (dot[62] == 1) {  // Check if dot 62 gobbled already
-	  myGLCD.fillCircle(42, 221, 2); // dot 62
+     if (dot[96] == 1) {  // Check if dot 96 gobbled already
+	  myGLCD.fillCircle(42, 301, 2); // Dot 96
      }   
   } else
-  if (xP== 28) { // dot 62
-     if (dot[61] == 1) {  // Check if dot 61 gobbled already
-	  myGLCD.fillCircle(19, 221, 2); // dot 61
+  if (xP== 28) { // dot 96
+     if (dot[95] == 1) {  // Check if dot 95 gobbled already
+	  myGLCD.fillCircle(19, 301, 2); // Dot 95
      }  
-     if (dot[63] == 1) {  // Check if dot 63 gobbled already
-	  myGLCD.fillCircle(65, 221, 2); // dot 63
+     if (dot[97] == 1) {  // Check if dot 97 gobbled already
+	 myGLCD.fillCircle(65, 301, 2); // Dot 97
      }      
   } else
-  if (xP== 52) { // dot 63
-     if (dot[64] == 1) {  // Check if dot 64 gobbled already
-	  myGLCD.fillCircle(88, 221, 2); // dot 64
+  if (xP== 52) { // dot 97
+     if (dot[96] == 1) {  // Check if dot 96 gobbled already
+	  myGLCD.fillCircle(42, 301, 2); // Dot 96
      } 
-     if (dot[62] == 1) {  // Check if dot 62 gobbled already
-	  myGLCD.fillCircle(42, 221, 2); // dot 62
+     if (dot[87] == 1) {  // Check if dot 87 gobbled already
+	  myGLCD.fillCircle(77, 281, 2); // Dot 87
      }  
-     if (dot[56] == 1) {  // Check if dot 56 gobbled already
-	  myGLCD.fillCircle(77, 201, 2); // dot 56 
+     if (dot[98] == 1) {  // Check if dot 98 gobbled already
+	  myGLCD.fillCircle(88, 301, 2); // Dot 98 
      }      
   } else
-  if (xP== 74) { // dot 64
-     if (dot[65] == 1) {  // Check if dot 65 gobbled already
-	  myGLCD.fillCircle(112, 221, 2); // dot 65
+  if (xP== 74) { // dot 98
+     if (dot[97] == 1) {  // Check if dot 97 gobbled already
+	  myGLCD.fillCircle(65, 301, 2); // Dot 97
      } 
-     if (dot[63] == 1) {  // Check if dot 63 gobbled already
-	  myGLCD.fillCircle(65, 221, 2); // dot 63
+     if (dot[87] == 1) {  // Check if dot 87 gobbled already
+	  myGLCD.fillCircle(77, 281, 2); // Dot 87
      }  
-     if (dot[56] == 1) {  // Check if dot 56 gobbled already
-	  myGLCD.fillCircle(77, 201, 2); // dot 56 
+     if (dot[99] == 1) {  // Check if dot 99 gobbled already
+	  myGLCD.fillCircle(112, 301, 2); // Dot 99 
      }     
   } else
-  if (xP== 98) { // dot 65
-     if (dot[64] == 1) {  // Check if dot 64 gobbled already
-	  myGLCD.fillCircle(88, 221, 2); // dot 64
+  if (xP== 98) { // dot 99
+     if (dot[98] == 1) {  // Check if dot 98 gobbled already
+	  myGLCD.fillCircle(88, 301, 2); // Dot 98
      } 
-     if (dot[66] == 1) {  // Check if dot 66 gobbled already
-	  myGLCD.fillCircle(136, 221, 2); // dot 66
+     if (dot[100] == 1) {  // Check if dot 100 gobbled already
+	  myGLCD.fillCircle(136, 301, 2); // Dot 100
      }    
   } else
-  if (xP== 120) { // dot 66
-     if (dot[65] == 1) {  // Check if dot 65 gobbled already
-	  myGLCD.fillCircle(112, 221, 2); // dot 65
+  if (xP== 120) { // dot 100
+     if (dot[99] == 1) {  // Check if dot 99 gobbled already
+	  myGLCD.fillCircle(112, 301, 2); // Dot 99
      } 
-     if (dot[57] == 1) {  // Check if dot 57 gobbled already
-	  myGLCD.fillCircle(136, 201, 2); // dot 57 
+     if (dot[88] == 1) {  // Check if dot 88 gobbled already
+	  myGLCD.fillCircle(136, 281, 2); // Dot 88
      }    
   } else
-  if (xP== 168) { // dot 67
-     if (dot[68] == 1) {  // Check if dot 68 gobbled already
-	  myGLCD.fillCircle(206, 221, 2); // dot 68
+  if (xP== 168) { // dot 101
+     if (dot[89] == 1) {  // Check if dot 89 gobbled already
+	  myGLCD.fillCircle(183, 281, 2); // Dot 89
      } 
-     if (dot[58] == 1) {  // Check if dot 58 gobbled already
+     if (dot[102] == 1) {  // Check if dot 102 gobbled already
 	  myGLCD.fillCircle(183, 201, 2); // dot 58
      }     
   } else
-  if (xP== 192) { // dot 68
-     if (dot[67] == 1) {  // Check if dot 67 gobbled already
+  if (xP== 192) { // dot 102
+     if (dot[101] == 1) {  // Check if dot 101 gobbled already
 	  myGLCD.fillCircle(183, 221, 2); // dot 67
      } 
-     if (dot[69] == 1) {  // Check if dot 69 gobbled already
+     if (dot[103] == 1) {  // Check if dot 103 gobbled already
 	  myGLCD.fillCircle(229, 221, 2); // dot 69
      }    
   } else
-  if (xP== 216) { // dot 69
-     if (dot[68] == 1) {  // Check if dot 68 gobbled already
-	  myGLCD.fillCircle(206, 221, 2); // dot 68
+  if (xP== 216) { // dot 103
+     if (dot[102] == 1) {  // Check if dot 102 gobbled already
+	  myGLCD.fillCircle(206, 301, 2); // Dot 102
      } 
-     if (dot[59] == 1) {  // Check if dot 59 gobbled already
-	  myGLCD.fillCircle(241, 201, 2); // dot 59
+     if (dot[90] == 1) {  // Check if dot 90 gobbled already
+	  myGLCD.fillCircle(241, 281, 2); // Dot 90
      }
-     if (dot[70] == 1) {  // Check if dot 70 gobbled already
-	  myGLCD.fillCircle(252, 221, 2); // dot 70
+     if (dot[104] == 1) {  // Check if dot 104 gobbled already
+	  myGLCD.fillCircle(252, 301, 2); // Dot 104
      }    
   } else
-  if (xP== 238) { // dot 70
-     if (dot[69] == 1) {  // Check if dot 69 gobbled already
-	  myGLCD.fillCircle(229, 221, 2); // dot 69
+  if (xP== 238) { // dot 104
+     if (dot[103] == 1) {  // Check if dot 103 gobbled already
+	  myGLCD.fillCircle(229, 301, 2); // Dot 103
      } 
-     if (dot[59] == 1) {  // Check if dot 59 gobbled already
-	  myGLCD.fillCircle(241, 201, 2); // dot 59
+     if (dot[90] == 1) {  // Check if dot 90 gobbled already
+	  myGLCD.fillCircle(241, 281, 2); // Dot 90
      }
-     if (dot[71] == 1) {  // Check if dot 71 gobbled already
-	  myGLCD.fillCircle(275, 221, 2); // dot 71
+     if (dot[105] == 1) {  // Check if dot 105 gobbled already
+	  myGLCD.fillCircle(275, 301, 2); // Dot 105
      }       
   } else
-  if (xP== 424) { // dot 71
-     if (dot[70] == 1) {  // Check if dot 70 gobbled already
-	  myGLCD.fillCircle(252, 221, 2); // dot 70
+  if (xP== 262) { // dot 105
+     if (dot[104] == 1) {  // Check if dot 104 gobbled already
+	  myGLCD.fillCircle(252, 301, 2); // Dot 104
      }  
-     if (dot[72] == 1) {  // Check if dot 72 gobbled already
-	  myGLCD.fillCircle(298, 221, 2); // dot 72
+     if (dot[106] == 1) {  // Check if dot 106 gobbled already
+	  myGLCD.fillCircle(298, 301, 2); // Dot 106
      }       
   } else
-  if (xP== 448) { // dot 72
-     if (dot[71] == 1) {  // Check if dot 71 gobbled already
-	  myGLCD.fillCircle(275, 221, 2); // dot 71
+  if (xP== 310) { // dot 106
+     if (dot[105] == 1) {  // Check if dot 105 gobbled already
+	  myGLCD.fillCircle(275, 301, 2); // Dot 105
      } 
-     if (dot[60] == 1) {  // Check if dot 60 gobbled already
-	  myGLCD.fillCircle(298, 201, 7); // Big dot 60
+     if (dot[91] == 1) {  // Check if dot 91 gobbled already
+	  myGLCD.fillCircle(298, 281, 2);  // dot 91
+     }  // *************  Larry added ********************   
+  }else
+  if (xP== 332) { // dot 107
+     if (dot[92] == 1) {  // Check if dot 92 gobbled already
+   myGLCD.fillCircle(347, 281, 2); // Dot 92
+     } 
+     if (dot[108] == 1) {  // Check if dot 108 gobbled already
+    myGLCD.fillCircle(368, 301, 2);  // dot 108
+     }     
+  } else
+  if (xP== 356) { // dot 108
+     if (dot[107] == 1) {  // Check if dot 107 gobbled already
+    myGLCD.fillCircle(345, 301, 2);  // dot 107
+     } 
+     if (dot[109] == 1) {  // Check if dot 109 gobbled already
+    myGLCD.fillCircle(391, 301, 2);  // dot 109
+     }    
+  } else
+  if (xP== 380) { // dot 109
+     if (dot[108] == 1) {  // Check if dot 108 gobbled already
+    myGLCD.fillCircle(368, 301, 2);  // dot 108
+     } 
+     if (dot[93] == 1) {  // Check if dot 93 gobbled already
+    myGLCD.fillCircle(406, 281, 2); // Dot 93
+     }
+     if (dot[110] == 1) {  // Check if dot 110 gobbled already
+    myGLCD.fillCircle(414, 301, 2);  // dot 110
+     }    
+  } else
+  if (xP== 402) { // dot 110
+     if (dot[109] == 1) {  // Check if dot 109 gobbled already
+    myGLCD.fillCircle(391, 301, 2);  // dot 109
+     } 
+     if (dot[93] == 1) {  // Check if dot 93 gobbled already
+    myGLCD.fillCircle(406, 281, 2); // Dot 93
+     }
+     if (dot[111] == 1) {  // Check if dot 111 gobbled already
+    myGLCD.fillCircle(275, 221, 2); // dot 71
+     }       
+  } else
+  if (xP== 424) { // dot 111
+     if (dot[110] == 1) {  // Check if dot 110 gobbled already
+    myGLCD.fillCircle(437, 301, 2);  // dot 111
+     }  
+     if (dot[112] == 1) {  // Check if dot 112 gobbled already
+    myGLCD.fillCircle(460, 301, 2);  // dot 112
+     }       
+  } else
+  if (xP== 448) { // dot 112
+     if (dot[94] == 1) {  // Check if dot 94 gobbled already
+    myGLCD.fillCircle(465, 281, 7); // Big dot 94
+     } 
+     if (dot[111] == 1) {  // Check if dot 111 gobbled already
+    myGLCD.fillCircle(437, 301, 2);  // dot 111
      }     
   }
 } else
-
 
 
 // Check Columns
 
 
 if (xP== 28) {  // if in Column 2
-  if (yP== 66) { // dot 32
-     if (dot[20] == 1) {  // Check if dot 20 gobbled already
-	  myGLCD.fillCircle(42, 60, 2); // dot 20
+  if (yP== 66) { // dot 48
+     if (dot[29] == 1) {  // Check if dot 29 gobbled already
+	  myGLCD.fillCircle(42, 60, 2); // Dot 29
      }     
-     if (dot[34] == 1) {  // Check if dot 34 gobbled already
+     if (dot[50] == 1) {  // Check if dot 50 gobbled already
 	  myGLCD.fillCircle(42, 100, 2); // dot 34
      }        
   } else
-  if (yP== 86) { // dot 34
-      if (dot[32] == 1) {  // Check if dot 32 gobbled already
-  	myGLCD.fillCircle(42, 80, 2); // dot 32
+  if (yP== 86) { // dot 50
+      if (dot[48] == 1) {  // Check if dot 48 gobbled already
+  	myGLCD.fillCircle(42, 100, 2); // Dot 50
      }  
-      if (dot[36] == 1) {  // Check if dot 36 gobbled already
-  	myGLCD.fillCircle(42, 120, 2); // dot 36
+      if (dot[52] == 1) {  // Check if dot 52 gobbled already
+  	myGLCD.fillCircle(42, 120, 2); // Dot 52
      }      
   } else
-  if (yP== 106) { // dot 36
-     if (dot[38] == 1) {  // Check if dot 38 gobbled already
-	  myGLCD.fillCircle(42, 140, 2); // dot 38
+  if (yP== 106) { // dot 52
+     if (dot[50] == 1) {  // Check if dot 50 gobbled already
+	  myGLCD.fillCircle(42, 100, 2); // Dot 50
      }     
-     if (dot[34] == 1) {  // Check if dot 34 gobbled already
-	  myGLCD.fillCircle(42, 100, 2); // dot 34
+     if (dot[54] == 1) {  // Check if dot 54 gobbled already
+	 myGLCD.fillCircle(42, 140, 2); // Dot 54
      }      
   } else
-  if (yP== 126) { // dot 38
-      if (dot[40] == 1) {  // Check if dot 40 gobbled already
-  	myGLCD.fillCircle(42, 160, 2); // dot 40
+  if (yP== 126) { // dot 54
+      if (dot[52] == 1) {  // Check if dot 52 gobbled already
+  	myGLCD.fillCircle(42, 120, 2); // Dot 52
      } 
-      if (dot[36] == 1) {  // Check if dot 36 gobbled already
-  	myGLCD.fillCircle(42, 120, 2); // dot 36
+      if (dot[56] == 1) {  // Check if dot 56 gobbled already
+  	myGLCD.fillCircle(42, 160, 2); // Dot 56
      }       
   } else
-  if (yP== 146) { // dot 40
-     if (dot[38] == 1) {  // Check if dot 38 gobbled already
-	  myGLCD.fillCircle(42, 140, 2); // dot 38
+  if (yP== 146) { // dot 56
+     if (dot[54] == 1) {  // Check if dot 54 gobbled already
+	  myGLCD.fillCircle(42, 140, 2); // Dot 54
      }     
-     if (dot[43] == 1) {  // Check if dot 43 gobbled already
-	  myGLCD.fillCircle(42, 181, 2); // dot 43
+     if (dot[58] == 1) {  // Check if dot 58 gobbled already
+	  myGLCD.fillCircle(42, 180, 2); // Dot 58
      }      
-  } 
-
+  }else
+  if (yP== 166) { // dot 58
+      if (dot[56] == 1) {  // Check if dot 56 gobbled already
+   myGLCD.fillCircle(42, 160, 2); // Dot 56
+     }  
+      if (dot[60] == 1) {  // Check if dot 60 gobbled already
+    myGLCD.fillCircle(42, 200, 2); // Dot 60
+     }      
+  } else
+  if (yP== 186) { // dot 60
+     if (dot[58] == 1) {  // Check if dot 58 gobbled already
+    myGLCD.fillCircle(42, 180, 2); // Dot 58
+     }     
+     if (dot[62] == 1) {  // Check if dot 62 gobbled already
+    myGLCD.fillCircle(42, 220, 2); // Dot 62
+     }      
+  } else
+  if (yP== 206) { // dot 62
+      if (dot[60] == 1) {  // Check if dot 60 gobbled already
+    myGLCD.fillCircle(42, 200, 2); // Dot 60
+     } 
+      if (dot[64] == 1) {  // Check if dot 64 gobbled already
+    myGLCD.fillCircle(42, 240, 2); // Dot 64
+     }       
+  } else
+  if (yP== 226) { // dot 64
+     if (dot[62] == 1) {  // Check if dot 62 gobbled already
+    myGLCD.fillCircle(42, 220, 2); // Dot 62
+     }     
+     if (dot[67] == 1) {  // Check if dot 67 gobbled already
+    myGLCD.fillCircle(42, 260, 2); // Dot 67
+     }      
+  }
+// ************************ Done to here *******************************
 } else
 if (xP== 424) {  // if in Column 7
 
@@ -2758,8 +3044,8 @@ if (yG == 4) {  // if in Row 1 *************************************************
       if (dot[11] == 1) {  // Check if dot 11 gobbled already
   	myGLCD.fillCircle(275, 19, 2); // dot 11
      }    
-      if (dot[27] == 1) {  // Check if dot 18 gobbled already
-  	myGLCD.fillCircle(298, 40, 7); // dot 18
+      if (dot[24] == 1) {  // Check if dot 24 gobbled already
+  	myGLCD.fillCircle(298, 40, 2);  // dot 24
      }  
   }else // ***************** continue row 1 Larry *******************
   if (xG == 332) { // dot 13 +48
@@ -3030,10 +3316,7 @@ if (yG == 46) {  // if in Row 3  ***********************************************
      }    
       if (dot[40] == 1) {  // Check if dot 40 gobbled already
   	myGLCD.fillCircle(298, 60, 2); // Dot 40 
-     }      
-      if (dot[24] == 1) {  // Check if dot 24 gobbled already
-  	myGLCD.fillCircle(298, 40, 2);  // dot 24
-     }  
+     }       
 // **************** Larry Add to row 3 ***********************   
   } else
   if (xG == 284) { // dot 40 +22
@@ -3519,60 +3802,60 @@ if (yG == 288) {  // if in Row 6  **********************************************
      }
      if (dot[105] == 1) {  // Check if dot 105 gobbled already
 	  myGLCD.fillCircle(275, 301, 2); // Dot 105
-     } // ************************ Done to here *******************************       
-  } else
-  if (xG == 262) { // dot 105
-     if (dot[70] == 1) {  // Check if dot 70 gobbled already
-	  myGLCD.fillCircle(252, 221, 2); // dot 70
-     }  
-     if (dot[72] == 1) {  // Check if dot 72 gobbled already
-	  myGLCD.fillCircle(298, 221, 2); // dot 72
      }       
   } else
+  if (xG == 262) { // dot 105
+     if (dot[104] == 1) {  // Check if dot 104 gobbled already
+	  myGLCD.fillCircle(252, 301, 2); // Dot 104
+     }  
+     if (dot[106] == 1) {  // Check if dot 106 gobbled already
+	  myGLCD.fillCircle(298, 301, 2); // Dot 106
+     }        
+  } else
   if (xG == 284) { // dot 106
-     if (dot[71] == 1) {  // Check if dot 71 gobbled already
-	  myGLCD.fillCircle(275, 221, 2); // dot 71
+     if (dot[105] == 1) {  // Check if dot 105 gobbled already
+	  myGLCD.fillCircle(275, 301, 2); // Dot 105
      } 
-     if (dot[60] == 1) {  // Check if dot 60 gobbled already
-	  myGLCD.fillCircle(298, 201, 7); // Big dot 60
-     }     
-  } else
-  if (xG == 332) { // dot 107
-     if (dot[68] == 1) {  // Check if dot 68 gobbled already
-   myGLCD.fillCircle(206, 221, 2); // dot 68
-     } 
-     if (dot[58] == 1) {  // Check if dot 58 gobbled already
-    myGLCD.fillCircle(183, 201, 2); // dot 58
-     }     
-  } else
-  if (xG == 356) { // dot 108
-     if (dot[67] == 1) {  // Check if dot 67 gobbled already
-    myGLCD.fillCircle(183, 221, 2); // dot 67
-     } 
-     if (dot[69] == 1) {  // Check if dot 69 gobbled already
-    myGLCD.fillCircle(229, 221, 2); // dot 69
+     if (dot[91] == 1) {  // Check if dot 91 gobbled already
+	  myGLCD.fillCircle(298, 281, 2);  // dot 91
      }    
   } else
-  if (xG == 380) { // dot 109
-     if (dot[68] == 1) {  // Check if dot 68 gobbled already
-    myGLCD.fillCircle(206, 221, 2); // dot 68
+  if (xG == 332) { // dot 107
+     if (dot[92] == 1) {  // Check if dot 92 gobbled already
+   myGLCD.fillCircle(347, 281, 2); // Dot 92
      } 
-     if (dot[59] == 1) {  // Check if dot 59 gobbled already
-    myGLCD.fillCircle(241, 201, 2); // dot 59
+     if (dot[108] == 1) {  // Check if dot 108 gobbled already
+    myGLCD.fillCircle(368, 301, 2);  // dot 108
+     }    
+  } else
+  if (xG == 356) { // dot 108
+     if (dot[107] == 1) {  // Check if dot 107 gobbled already
+    myGLCD.fillCircle(345, 301, 2);  // dot 107
+     } 
+     if (dot[109] == 1) {  // Check if dot 109 gobbled already
+    myGLCD.fillCircle(391, 301, 2);  // dot 109
+     }      
+  } else
+  if (xG == 380) { // dot 109
+     if (dot[108] == 1) {  // Check if dot 108 gobbled already
+    myGLCD.fillCircle(368, 301, 2);  // dot 108
+     } 
+     if (dot[93] == 1) {  // Check if dot 93 gobbled already
+    myGLCD.fillCircle(406, 281, 2); // Dot 93
      }
-     if (dot[70] == 1) {  // Check if dot 70 gobbled already
-    myGLCD.fillCircle(252, 221, 2); // dot 70
+     if (dot[110] == 1) {  // Check if dot 110 gobbled already
+    myGLCD.fillCircle(414, 301, 2);  // dot 110
      }    
   } else
   if (xG == 402) { // dot 110
-     if (dot[69] == 1) {  // Check if dot 69 gobbled already
-    myGLCD.fillCircle(229, 221, 2); // dot 69
+     if (dot[109] == 1) {  // Check if dot 109 gobbled already
+    myGLCD.fillCircle(391, 301, 2);  // dot 109
      } 
-     if (dot[59] == 1) {  // Check if dot 59 gobbled already
-    myGLCD.fillCircle(241, 201, 2); // dot 59
+     if (dot[93] == 1) {  // Check if dot 93 gobbled already
+    myGLCD.fillCircle(406, 281, 2); // Dot 93
      }
-     if (dot[71] == 1) {  // Check if dot 71 gobbled already
-    myGLCD.fillCircle(275, 221, 2); // dot 71
+     if (dot[111] == 1) {  // Check if dot 111 gobbled already
+    myGLCD.fillCircle(437, 301, 2);  // dot 111
      }       
   } else
   if (xG == 424) { // dot 111
@@ -3584,11 +3867,11 @@ if (yG == 288) {  // if in Row 6  **********************************************
      }       
   } else
   if (xG == 448) { // dot 112
-     if (dot[71] == 1) {  // Check if dot 71 gobbled already
-    myGLCD.fillCircle(275, 221, 2); // dot 71
+     if (dot[111] == 1) {  // Check if dot 111 gobbled already
+    myGLCD.fillCircle(437, 301, 2);  // dot 111
      } 
-     if (dot[60] == 1) {  // Check if dot 60 gobbled already
-    myGLCD.fillCircle(298, 201, 7); // Big dot 60
+     if (dot[94] == 1) {  // Check if dot 94 gobbled already
+    myGLCD.fillCircle(465, 281, 7); // Big dot 94
      }     
   }
 } else
@@ -3599,90 +3882,156 @@ if (yG == 288) {  // if in Row 6  **********************************************
 
 
 if (xG == 28) {  // if in Column 2
-  if (yG == 66) { // dot 32
-     if (dot[20] == 1) {  // Check if dot 20 gobbled already
-	  myGLCD.fillCircle(42, 60, 2); // dot 20
+  if (yG == 66) { // dot 48
+     if (dot[29] == 1) {  // Check if dot 29 gobbled already
+	  myGLCD.fillCircle(42, 60, 2); // Dot 29
      }     
-     if (dot[34] == 1) {  // Check if dot 34 gobbled already
-	  myGLCD.fillCircle(42, 100, 2); // dot 34
+     if (dot[50] == 1) {  // Check if dot 50 gobbled already
+	  myGLCD.fillCircle(42, 100, 2); // Dot 50
      }        
   } else
-  if (yG == 86) { // dot 34
-      if (dot[32] == 1) {  // Check if dot 32 gobbled already
-  	myGLCD.fillCircle(42, 80, 2); // dot 32
+  if (yG == 86) { // dot 50
+      if (dot[48] == 1) {  // Check if dot 48 gobbled already
+  	myGLCD.fillCircle(42, 80, 2); // Dot 48
      }  
-      if (dot[36] == 1) {  // Check if dot 36 gobbled already
-  	myGLCD.fillCircle(42, 120, 2); // dot 36
+      if (dot[52] == 1) {  // Check if dot 52 gobbled already
+  	myGLCD.fillCircle(42, 120, 2); // Dot 52
      }      
   } else
-  if (yG == 106) { // dot 36
-     if (dot[38] == 1) {  // Check if dot 38 gobbled already
-	  myGLCD.fillCircle(42, 140, 2); // dot 38
+  if (yG == 106) { // dot 52
+     if (dot[50] == 1) {  // Check if dot 50 gobbled already
+	  myGLCD.fillCircle(42, 100, 2); // Dot 50
      }     
-     if (dot[34] == 1) {  // Check if dot 34 gobbled already
-	  myGLCD.fillCircle(42, 100, 2); // dot 34
+     if (dot[54] == 1) {  // Check if dot 54 gobbled already
+	  myGLCD.fillCircle(42, 140, 2); // Dot 54
      }      
   } else
-  if (yG == 126) { // dot 38
-      if (dot[40] == 1) {  // Check if dot 40 gobbled already
-  	myGLCD.fillCircle(42, 160, 2); // dot 40
+  if (yG == 126) { // dot 54
+      if (dot[52] == 1) {  // Check if dot 52 gobbled already
+  	myGLCD.fillCircle(42, 120, 2); // Dot 52
      } 
-      if (dot[36] == 1) {  // Check if dot 36 gobbled already
-  	myGLCD.fillCircle(42, 120, 2); // dot 36
-     }       
+      if (dot[56] == 1) {  // Check if dot 56 gobbled already
+  	myGLCD.fillCircle(42, 160, 2); // Dot 56
+     }     
   } else
-  if (yG == 146) { // dot 40
+  if (yG == 146) { // dot 56
      if (dot[38] == 1) {  // Check if dot 38 gobbled already
 	  myGLCD.fillCircle(42, 140, 2); // dot 38
      }     
      if (dot[43] == 1) {  // Check if dot 43 gobbled already
 	  myGLCD.fillCircle(42, 181, 2); // dot 43
+     } // ****************  Added more decisions Larry **************     
+  } else
+  if (yG == 166) { // dot 58
+      if (dot[54] == 1) {  // Check if dot 54 gobbled already
+   myGLCD.fillCircle(42, 140, 2); // Dot 54
+     } 
+      if (dot[58] == 1) {  // Check if dot 58 gobbled already
+    myGLCD.fillCircle(42, 180, 2); // Dot 58
+     }         
+  } else
+  if (yG == 186) { // dot 60
+     if (dot[58] == 1) {  // Check if dot 58 gobbled already
+    myGLCD.fillCircle(42, 180, 2); // Dot 58
+     }     
+     if (dot[62] == 1) {  // Check if dot 62 gobbled already
+    myGLCD.fillCircle(42, 220, 2); // Dot 62
+     }      
+  } else
+  if (yG == 206) { // dot 62
+      if (dot[60] == 1) {  // Check if dot 60 gobbled already
+   myGLCD.fillCircle(42, 200, 2); // Dot 60
+     } 
+      if (dot[64] == 1) {  // Check if dot 64 gobbled already
+    myGLCD.fillCircle(42, 240, 2); // Dot 64
+     }       
+  } else
+  if (yG == 226) { // dot 64
+     if (dot[62] == 1) {  // Check if dot 62 gobbled already
+    myGLCD.fillCircle(42, 220, 2); // Dot 62
+     }     
+     if (dot[67] == 1) {  // Check if dot 67 gobbled already
+    myGLCD.fillCircle(42, 260, 2); // Dot 67
      }      
   } 
 
 } else
 if (xG == 424) {  // if in Column 7
 
-  if (yG == 66) { // dot 33
-      if (dot[30] == 1) {  // Check if dot 30 gobbled already
-  	myGLCD.fillCircle(275, 60, 2); // dot 30
+  if (yG == 66) { // dot 49
+      if (dot[46] == 1) {  // Check if dot 46 gobbled already
+  	myGLCD.fillCircle(436, 60, 2); // Dot 46
      }   
-      if (dot[35] == 1) {  // Check if dot 35 gobbled already
-  	myGLCD.fillCircle(275, 100, 2); // dot 35
+      if (dot[51] == 1) {  // Check if dot 51 gobbled already
+  	myGLCD.fillCircle(435, 100, 2); // Dot 51
      }   
   } else
-  if (yG == 86) { // dot 35
-      if (dot[33] == 1) {  // Check if dot 33 gobbled already
-  	myGLCD.fillCircle(275, 80, 2); // dot 33
+  if (yG == 86) { // dot 51
+      if (dot[49] == 1) {  // Check if dot 49 gobbled already
+  	myGLCD.fillCircle(435, 80, 2); // Dot 49
      }  
-      if (dot[37] == 1) {  // Check if dot 37 gobbled already
-  	myGLCD.fillCircle(275, 120, 2); // dot 37
+      if (dot[53] == 1) {  // Check if dot 53 gobbled already
+  	myGLCD.fillCircle(435, 120, 2); // Dot 53
      }     
   } else
-  if (yG == 106) { // dot 37
-      if (dot[35] == 1) {  // Check if dot 35 gobbled already
-  	myGLCD.fillCircle(275, 100, 2); // dot 35
+  if (yG == 106) { // dot 53
+      if (dot[51] == 1) {  // Check if dot 51 gobbled already
+  	myGLCD.fillCircle(435, 100, 2); // Dot 51
      }  
-      if (dot[39] == 1) {  // Check if dot 39 gobbled already
-  	myGLCD.fillCircle(275, 140, 2); // dot 39
+      if (dot[55] == 1) {  // Check if dot 55 gobbled already
+  	myGLCD.fillCircle(435, 140, 2); // Dot 55
      }      
   } else
-  if (yG == 126) { // dot 39
-      if (dot[37] == 1) {  // Check if dot 37 gobbled already
-  	myGLCD.fillCircle(275, 120, 2); // dot 37
+  if (yG == 126) { // dot 55
+      if (dot[53] == 1) {  // Check if dot 53 gobbled already
+  	myGLCD.fillCircle(435, 120, 2); // Dot 53
      }
-     if (dot[41] == 1) {  // Check if dot 41 gobbled already
-	  myGLCD.fillCircle(275, 160, 2); // dot 41
+     if (dot[57] == 1) {  // Check if dot 57 gobbled already
+	  myGLCD.fillCircle(435, 160, 2); // Dot 57
      }       
   } else
-  if (yG == 146) { // dot 41
-      if (dot[39] == 1) {  // Check if dot 39 gobbled already
-  	myGLCD.fillCircle(275, 140, 2); // dot 39
+  if (yG == 146) { // dot 57
+      if (dot[55] == 1) {  // Check if dot 55 gobbled already
+  	myGLCD.fillCircle(435, 140, 2); // Dot 55
      } 
-     if (dot[53] == 1) {  // Check if dot 53 gobbled already
-	  myGLCD.fillCircle(275, 181, 2); // dot 53
+     if (dot[59] == 1) {  // Check if dot 59 gobbled already
+	  myGLCD.fillCircle(435, 180, 2); // Dot 59 
+     } // ******************* Added more decisions Larry ***************************** 
+        
+  } else
+  if (yG == 166) { // dot 59
+      if (dot[57] == 1) {  // Check if dot 57 gobbled already
+   myGLCD.fillCircle(435, 160, 2); // Dot 57
+     }  
+      if (dot[61] == 1) {  // Check if dot 61 gobbled already
+    myGLCD.fillCircle(435, 200, 2); // Dot 61
+     }     
+  } else
+  if (yG == 186) { // dot 61
+      if (dot[59] == 1) {  // Check if dot 59 gobbled already
+    myGLCD.fillCircle(435, 180, 2); // Dot 59
+     }  
+      if (dot[63] == 1) {  // Check if dot 63 gobbled already
+    myGLCD.fillCircle(435, 220, 2); // Dot 63
+     }      
+  } else
+  if (yG == 206) { // dot 63
+      if (dot[61] == 1) {  // Check if dot 61 gobbled already
+    myGLCD.fillCircle(435, 200, 2); // Dot 61
+     }
+     if (dot[65] == 1) {  // Check if dot 65 gobbled already
+    myGLCD.fillCircle(435, 240, 2); // Dot 65
+     }       
+  } else
+  if (yG == 226) { // dot 65
+      if (dot[63] == 1) {  // Check if dot 63 gobbled already
+    myGLCD.fillCircle(435, 220, 2); // Dot 63
+     } 
+     if (dot[84] == 1) {  // Check if dot 84 gobbled already
+    myGLCD.fillCircle(436, 260, 2); // Dot 84 
      }     
   } 
+ 
 }
 
 
