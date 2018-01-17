@@ -40,7 +40,7 @@ boolean mspacman = false;  //  if this is is set to true then play the game as M
 // Changed Larry
 //Dot Array - There are 112 Dots with 4 of them that will turn Ghost Blue!
 
-byte dot[112]; // Where if dot is zero then has been gobbled by Pac-Man
+byte dot[113]; // Where if dot is zero then has been gobbled by Pac-Man
 
 
 
@@ -154,7 +154,7 @@ int gdirect;   //  Random direction variable
 void setup() {
 
 // Initialize Dot Array Larry
-  for (int dotarray = 1; dotarray < 112; dotarray++) {    
+  for (int dotarray = 1; dotarray < 113; dotarray++) {    
     dot[dotarray] = 1;    
     }
   
@@ -225,7 +225,7 @@ if (LDR <=120)   {
   myGLCD.setBackColor(114, 198, 206);
   myGLCD.printNumI(xG,228,200); // Print xP
   myGLCD.printNumI(yG,228,220); // Print yP
-*/  
+*/
 dimscreen = (LDR/4)+5;
 
 if (dimscreen >= 255){
@@ -240,7 +240,7 @@ if((ghostscore >= 95)||(pacmanscore >= 95)){ // Reset scoreboard if over 95
 ghostscore = 0;
 pacmanscore = 0;
 
-  for (int dotarray = 1; dotarray < 112; dotarray++) {
+  for (int dotarray = 1; dotarray < 113; dotarray++) {
     
     dot[dotarray] = 1;
     
@@ -451,8 +451,8 @@ if (yP== 4) {  // if in Row 1 **************************************************
      if (dot[2] == 1) {  // Check if dot 2 gobbled already
 	  myGLCD.fillCircle(42, 19, 2); // dot 2
      }    
-      if (dot[19] == 1) {  // Check if dot 13 gobbled already
-  	myGLCD.fillCircle(19, 40, 7); // Big dot 13
+      if (dot[19] == 1) {  // Check if dot 19 gobbled already
+  	myGLCD.fillCircle(19, 40, 7); // Big dot 19
      }    
 
   } else
@@ -747,14 +747,14 @@ if (yP== 46) {  // if in Row 3  ************************************************
      }      
   } else
   if (xP== 216) { // dot 37
-      if (dot[36] == 1) {  // Check if dot 29 gobbled already
-  	myGLCD.fillCircle(252, 60, 2); // dot 29
+      if (dot[36] == 1) {  // Check if dot 36 gobbled already
+  	myGLCD.fillCircle(206, 60, 2); // Dot 36
      }    
-      if (dot[23] == 1) {  // Check if dot 27 gobbled already
-  	myGLCD.fillCircle(206, 60, 2); // dot 27
+      if (dot[23] == 1) {  // Check if dot 23 gobbled already
+  	myGLCD.fillCircle(241, 40, 2);  // dot 23
      }      
-      if (dot[38] == 1) {  // Check if dot 17 gobbled already
-  	myGLCD.fillCircle(241, 40, 2); // dot 17
+      if (dot[38] == 1) {  // Check if dot 38 gobbled already
+  	myGLCD.fillCircle(252, 60, 2); // Dot 38
      }  
   } else
   if (xP== 238) { // dot 38
@@ -797,12 +797,12 @@ if (yP== 46) {  // if in Row 3  ************************************************
      }        
   } else
   if (xP== 332) { // dot 42
-      if (dot[25] == 1) {  // Check if dot 25 gobbled already
-    myGLCD.fillCircle(160, 60, 2); // dot 25
-     }    
       if (dot[41] == 1) {  // Check if dot 41 gobbled already
     myGLCD.fillCircle(321, 60, 2); // Dot 41
      }
+      if (dot[25] == 1) {  // Check if dot 25 gobbled already
+    myGLCD.fillCircle(160, 60, 2); // dot 25
+     }    
       if (dot[43] == 1) {  // Check if dot 43 gobbled already
     myGLCD.fillCircle(367, 60, 2); // Dot 43
      }   
@@ -818,21 +818,21 @@ if (yP== 46) {  // if in Row 3  ************************************************
   if (xP== 380) { // dot 44
       if (dot[43] == 1) {  // Check if dot 43 gobbled already
     myGLCD.fillCircle(367, 60, 2); // Dot 43
-     }    
-      if (dot[45] == 1) {  // Check if dot 45 gobbled already
-    myGLCD.fillCircle(413, 60, 2); // Dot 45
-     }       
+     }
       if (dot[26] == 1) {  // Check if dot 26 gobbled already
     myGLCD.fillCircle(406, 40, 2);  // dot 26
-     }   
+     }     
+      if (dot[45] == 1) {  // Check if dot 45 gobbled already
+    myGLCD.fillCircle(413, 60, 2); // Dot 45
+     }         
   } else
   if (xP== 402) { // dot 45
-     if (dot[26] == 1) {  // Check if dot 28 gobbled already
-    myGLCD.fillCircle(229, 60, 2); // dot 28
-     }    
-      if (dot[44] == 1) {  // Check if dot 44 gobbled already
+     if (dot[44] == 1) {  // Check if dot 44 gobbled already
     myGLCD.fillCircle(390, 60, 2); // Dot 44
-     }      
+     }
+     if (dot[26] == 1) {  // Check if dot 26 gobbled already
+    myGLCD.fillCircle(406, 40, 2);  // dot 26
+     }          
       if (dot[46] == 1) {  // Check if dot 46 gobbled already
     myGLCD.fillCircle(436, 60, 2); // Dot 46
      }   
@@ -842,8 +842,8 @@ if (yP== 46) {  // if in Row 3  ************************************************
       if (dot[45] == 1) {  // Check if dot 45 gobbled already
     myGLCD.fillCircle(413, 60, 2); // Dot 45
      }    
-      if (dot[49] == 1) {  // Check if dot 40 gobbled already
-    myGLCD.fillCircle(298, 60, 2); // Dot 40
+      if (dot[49] == 1) {  // Check if dot 49 gobbled already
+    myGLCD.fillCircle(435, 80, 2); // Dot 49
      }      
       if (dot[47] == 1) {  // Check if dot 47 gobbled already
     myGLCD.fillCircle(459, 60, 2); //Dot 47
@@ -1118,8 +1118,8 @@ if (yP== 268) {  // if in Row 5  ***********************************************
      if (dot[104] == 1) {  // Check if dot 104 gobbled already
 	  myGLCD.fillCircle(252, 301, 2); // Dot 104
      } 
-     if (dot[105] == 1) {  // Check if dot 105 gobbled already
-	  myGLCD.fillCircle(275, 301, 2); // Dot 105
+     if (dot[103] == 1) {  // Check if dot 103 gobbled already
+	  myGLCD.fillCircle(229, 301, 2); // Dot 103
      }      
      
   } else
@@ -1229,15 +1229,15 @@ if (yP== 288) {  // if in Row 6  ***********************************************
 	  myGLCD.fillCircle(183, 281, 2); // Dot 89
      } 
      if (dot[102] == 1) {  // Check if dot 102 gobbled already
-	  myGLCD.fillCircle(183, 201, 2); // dot 58
+	  myGLCD.fillCircle(206, 301, 2); // Dot 102
      }     
   } else
   if (xP== 192) { // dot 102
      if (dot[101] == 1) {  // Check if dot 101 gobbled already
-	  myGLCD.fillCircle(183, 221, 2); // dot 67
+	  myGLCD.fillCircle(183, 301, 2); // Dot 101
      } 
      if (dot[103] == 1) {  // Check if dot 103 gobbled already
-	  myGLCD.fillCircle(229, 221, 2); // dot 69
+	  myGLCD.fillCircle(229, 301, 2); // Dot 103
      }    
   } else
   if (xP== 216) { // dot 103
@@ -1313,12 +1313,12 @@ if (yP== 288) {  // if in Row 6  ***********************************************
     myGLCD.fillCircle(406, 281, 2); // Dot 93
      }
      if (dot[111] == 1) {  // Check if dot 111 gobbled already
-    myGLCD.fillCircle(275, 221, 2); // dot 71
+    myGLCD.fillCircle(437, 301, 2);  // dot 111
      }       
   } else
   if (xP== 424) { // dot 111
      if (dot[110] == 1) {  // Check if dot 110 gobbled already
-    myGLCD.fillCircle(437, 301, 2);  // dot 111
+    myGLCD.fillCircle(414, 301, 2);  // dot 110
      }  
      if (dot[112] == 1) {  // Check if dot 112 gobbled already
     myGLCD.fillCircle(460, 301, 2);  // dot 112
@@ -1344,12 +1344,12 @@ if (xP== 28) {  // if in Column 2
 	  myGLCD.fillCircle(42, 60, 2); // Dot 29
      }     
      if (dot[50] == 1) {  // Check if dot 50 gobbled already
-	  myGLCD.fillCircle(42, 100, 2); // dot 34
+	  myGLCD.fillCircle(42, 100, 2); // Dot 50
      }        
   } else
   if (yP== 86) { // dot 50
       if (dot[48] == 1) {  // Check if dot 48 gobbled already
-  	myGLCD.fillCircle(42, 100, 2); // Dot 50
+  	myGLCD.fillCircle(42, 80, 2); // Dot 48
      }  
       if (dot[52] == 1) {  // Check if dot 52 gobbled already
   	myGLCD.fillCircle(42, 120, 2); // Dot 52
@@ -1488,10 +1488,7 @@ if (xP== 424) {  // if in Column 7
      }     
   }
 }
-
-// ************************ Done to here *******************************
-
-  
+ 
 // increment Pacman Graphic Flag 0 = Closed, 1 = Medium Open, 2 = Wide Open
 P=P+1; 
 if(P==4){
@@ -1578,48 +1575,43 @@ if (yP == 4) {  // if in Row 1 *************************************************
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 424) { // dot 11
+  if (xP == 262) { // dot 11
      if (dot[11] == 1) {  // Check if dot gobbled already
         dot[11] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 448) { // dot 12
-     if (dot[27] == 1) {  // Check if dot gobbled already
-        dot[27] = 0; // Reset flag to Zero
+  if (xP == 284) { // dot 12
+     if (dot[12] == 1) {  // Check if dot gobbled already
+        dot[12] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
-     }     
-  } 
-
-} else 
-if (yP == 26) {  // if in Row 2  **********************************************************
-  if (xP == 4) { // dot 13
+     } // ***************** Add check Larry ****************************    
+  }  else
+  if (xP == 332) { // dot 13
      if (dot[13] == 1) {  // Check if dot gobbled already
         dot[13] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score 
-        // Turn Ghost Blue if Pacman eats Big Dots
-        fruiteatenpacman = true; // Turn Ghost blue      
+        pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 62) { // dot 14
+  if (xP == 356) { // dot 14
      if (dot[14] == 1) {  // Check if dot gobbled already
         dot[14] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 120) { // dot 15
+  if (xP == 380) { // dot 15
      if (dot[15] == 1) {  // Check if dot gobbled already
         dot[15] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 168) { // dot 16
+  if (xP == 402) { // dot 16
      if (dot[16] == 1) {  // Check if dot gobbled already
         dot[16] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 228) { // dot 17
+  if (xP == 424) { // dot 17
      if (dot[17] == 1) {  // Check if dot gobbled already
         dot[17] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
@@ -1628,6 +1620,65 @@ if (yP == 26) {  // if in Row 2  ***********************************************
   if (xP == 448) { // dot 18
      if (dot[18] == 1) {  // Check if dot gobbled already
         dot[18] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } 
+
+} else 
+if (yP == 26) {  // if in Row 2  **********************************************************
+  if (xP == 4) { // dot 19
+     if (dot[19] == 1) {  // Check if dot gobbled already
+        dot[19] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score 
+        // Turn Ghost Blue if Pacman eats Big Dots
+        fruiteatenpacman = true; // Turn Ghost blue      
+     }     
+  } else
+  if (xP == 62) { // dot 20
+     if (dot[20] == 1) {  // Check if dot gobbled already
+        dot[20] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 120) { // dot 21
+     if (dot[21] == 1) {  // Check if dot gobbled already
+        dot[21] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 168) { // dot 22
+     if (dot[22] == 1) {  // Check if dot gobbled already
+        dot[22] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 228) { // dot 23
+     if (dot[23] == 1) {  // Check if dot gobbled already
+        dot[23] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 284) { // dot 24
+     if (dot[24] == 1) {  // Check if dot gobbled already
+        dot[24] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 332) { // dot 25
+     if (dot[25] == 1) {  // Check if dot gobbled already
+        dot[25] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 392) { // dot 26
+     if (dot[26] == 1) {  // Check if dot gobbled already
+        dot[26] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 448) { // dot 27
+     if (dot[27] == 1) {  // Check if dot gobbled already
+        dot[27] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score
         // Turn Ghost Blue if Pacman eats Big Dots
         fruiteatenpacman = true; // Turn Ghost Blue       
@@ -1636,205 +1687,309 @@ if (yP == 26) {  // if in Row 2  ***********************************************
 
 } else
 if (yP == 46) {  // if in Row 3  **********************************************************
-  if (xP == 4) { // dot 19
-     if (dot[19] == 1) {  // Check if dot gobbled already
-        dot[19] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 28) { // dot 20
-     if (dot[20] == 1) {  // Check if dot gobbled already
-        dot[20] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 52) { // dot 21
-     if (dot[21] == 1) {  // Check if dot gobbled already
-        dot[21] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 74) { // dot 22
-     if (dot[22] == 1) {  // Check if dot gobbled already
-        dot[22] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 98) { // dot 23
-     if (dot[23] == 1) {  // Check if dot gobbled already
-        dot[23] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 120) { // dot 24
-     if (dot[24] == 1) {  // Check if dot gobbled already
-        dot[24] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 146) { // dot 25
-     if (dot[25] == 1) {  // Check if dot gobbled already
-        dot[25] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-
-  if (xP == 168) { // dot 26
-     if (dot[26] == 1) {  // Check if dot gobbled already
-        dot[26] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 192) { // dot 27
-     if (dot[27] == 1) {  // Check if dot gobbled already
-        dot[27] = 0; // Reset flag to Zero
-        pacmanscore++; // Increment pacman score       
-     }     
-  } else
-  if (xP == 216) { // dot 28
+  if (xP == 4) { // dot 28
      if (dot[28] == 1) {  // Check if dot gobbled already
         dot[28] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 238) { // dot 29
+  if (xP == 28) { // dot 29
      if (dot[29] == 1) {  // Check if dot gobbled already
         dot[29] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 424) { // dot 30
+  if (xP == 52) { // dot 30
      if (dot[30] == 1) {  // Check if dot gobbled already
         dot[30] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 448) { // dot 31
+  if (xP == 74) { // dot 31
      if (dot[31] == 1) {  // Check if dot gobbled already
         dot[31] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
-  } 
+  } else
+  if (xP == 98) { // dot 32
+     if (dot[32] == 1) {  // Check if dot gobbled already
+        dot[32] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 120) { // dot 33
+     if (dot[33] == 1) {  // Check if dot gobbled already
+        dot[33] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 146) { // dot 34
+     if (dot[34] == 1) {  // Check if dot gobbled already
+        dot[34] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
 
-} else
-if (yP == 248) {  // if in Row 4  **********************************************************
-  if (xP == 4) { // dot 42
+  if (xP == 168) { // dot 35
+     if (dot[35] == 1) {  // Check if dot gobbled already
+        dot[35] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 192) { // dot 36
+     if (dot[36] == 1) {  // Check if dot gobbled already
+        dot[36] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 216) { // dot 37
+     if (dot[37] == 1) {  // Check if dot gobbled already
+        dot[37] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 238) { // dot 38
+     if (dot[38] == 1) {  // Check if dot gobbled already
+        dot[38] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 262) { // dot 39
+     if (dot[39] == 1) {  // Check if dot gobbled already
+        dot[39] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 284) { // dot 40
+     if (dot[40] == 1) {  // Check if dot gobbled already
+        dot[40] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }   // ****************** Add Larry *******************  
+  }  else
+  if (xP == 310) { // dot 41
+     if (dot[41] == 1) {  // Check if dot gobbled already
+        dot[41] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+
+  if (xP == 332) { // dot 42
      if (dot[42] == 1) {  // Check if dot gobbled already
         dot[42] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 28) { // dot 43
+  if (xP == 356) { // dot 43
      if (dot[43] == 1) {  // Check if dot gobbled already
         dot[43] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 52) { // dot 44
+  if (xP == 380) { // dot 44
      if (dot[44] == 1) {  // Check if dot gobbled already
         dot[44] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 74) { // dot 45
+  if (xP == 402) { // dot 45
      if (dot[45] == 1) {  // Check if dot gobbled already
         dot[45] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 98) { // dot 46
+  if (xP == 424) { // dot 46
      if (dot[46] == 1) {  // Check if dot gobbled already
         dot[46] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 120) { // dot 47
+  if (xP == 448) { // dot 47
      if (dot[47] == 1) {  // Check if dot gobbled already
         dot[47] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
+  }
+
+} else
+if (yP == 248) {  // if in Row 4  **********************************************************
+  if (xP == 4) { // dot 66
+     if (dot[66] == 1) {  // Check if dot gobbled already
+        dot[66] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
   } else
-  if (xP == 146) { // dot 48
-     if (dot[48] == 1) {  // Check if dot gobbled already
-        dot[48] = 0; // Reset flag to Zero
+  if (xP == 28) { // dot 67
+     if (dot[67] == 1) {  // Check if dot gobbled already
+        dot[67] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 52) { // dot 68
+     if (dot[68] == 1) {  // Check if dot gobbled already
+        dot[68] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 74) { // dot 69
+     if (dot[69] == 1) {  // Check if dot gobbled already
+        dot[69] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 98) { // dot 70
+     if (dot[70] == 1) {  // Check if dot gobbled already
+        dot[70] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 120) { // dot 71
+     if (dot[71] == 1) {  // Check if dot gobbled already
+        dot[71] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 146) { // dot 72
+     if (dot[72] == 1) {  // Check if dot gobbled already
+        dot[72] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
 
-  if (xP == 168) { // dot 49
-     if (dot[49] == 1) {  // Check if dot gobbled already
-        dot[49] = 0; // Reset flag to Zero
+  if (xP == 168) { // dot 73
+     if (dot[73] == 1) {  // Check if dot gobbled already
+        dot[73] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 192) { // dot 50
-     if (dot[50] == 1) {  // Check if dot gobbled already
-        dot[50] = 0; // Reset flag to Zero
+  if (xP == 192) { // dot 74
+     if (dot[74] == 1) {  // Check if dot gobbled already
+        dot[74] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 216) { // dot 51
-     if (dot[51] == 1) {  // Check if dot gobbled already
-        dot[51] = 0; // Reset flag to Zero
+  if (xP == 216) { // dot 75
+     if (dot[75] == 1) {  // Check if dot gobbled already
+        dot[75] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 238) { // dot 52
-     if (dot[52] == 1) {  // Check if dot gobbled already
-        dot[52] = 0; // Reset flag to Zero
+  if (xP == 238) { // dot 76
+     if (dot[76] == 1) {  // Check if dot gobbled already
+        dot[76] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 424) { // dot 53
-     if (dot[53] == 1) {  // Check if dot gobbled already
-        dot[53] = 0; // Reset flag to Zero
+  if (xP == 262) { // dot 77
+     if (dot[77] == 1) {  // Check if dot gobbled already
+        dot[77] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 448) { // dot 54
-     if (dot[54] == 1) {  // Check if dot gobbled already
-        dot[54] = 0; // Reset flag to Zero
+  if (xP == 284) { // dot 78
+     if (dot[78] == 1) {  // Check if dot gobbled already
+        dot[78] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     } // *************** Add Larry ******************   
+  } else
+  if (xP == 310) { // dot 79
+     if (dot[79] == 1) {  // Check if dot gobbled already
+        dot[79] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
-  } 
+  } else
+
+  if (xP == 332) { // dot 80
+     if (dot[80] == 1) {  // Check if dot gobbled already
+        dot[80] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 356) { // dot 81
+     if (dot[81] == 1) {  // Check if dot gobbled already
+        dot[81] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 380) { // dot 82
+     if (dot[82] == 1) {  // Check if dot gobbled already
+        dot[82] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 402) { // dot 83
+     if (dot[83] == 1) {  // Check if dot gobbled already
+        dot[83] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 424) { // dot 84
+     if (dot[84] == 1) {  // Check if dot gobbled already
+        dot[84] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 448) { // dot 85
+     if (dot[85] == 1) {  // Check if dot gobbled already
+        dot[85] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }   
+  }
 
 } else
 if (yP == 268) {  // if in Row 5  **********************************************************
-  if (xP == 4) { // dot 55
-     if (dot[55] == 1) {  // Check if dot gobbled already
-        dot[55] = 0; // Reset flag to Zero
+  if (xP == 4) { // dot 86
+     if (dot[86] == 1) {  // Check if dot gobbled already
+        dot[86] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score
          // Turn Ghost Blue if Pacman eats Big Dots
         fruiteatenpacman = true; // Turn Ghost blue         
      }     
   } else
-  if (xP == 62) { // dot 56
-     if (dot[56] == 1) {  // Check if dot gobbled already
-        dot[56] = 0; // Reset flag to Zero
+  if (xP == 62) { // dot 87
+     if (dot[87] == 1) {  // Check if dot gobbled already
+        dot[87] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 120) { // dot 57
-     if (dot[57] == 1) {  // Check if dot gobbled already
-        dot[57] = 0; // Reset flag to Zero
+  if (xP == 120) { // dot 88
+     if (dot[88] == 1) {  // Check if dot gobbled already
+        dot[88] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 168) { // dot 58
-     if (dot[58] == 1) {  // Check if dot gobbled already
-        dot[58] = 0; // Reset flag to Zero
+  if (xP == 168) { // dot 89
+     if (dot[89] == 1) {  // Check if dot gobbled already
+        dot[89] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 228) { // dot 59
-     if (dot[59] == 1) {  // Check if dot gobbled already
-        dot[59] = 0; // Reset flag to Zero
+  if (xP == 228) { // dot 90
+     if (dot[90] == 1) {  // Check if dot gobbled already
+        dot[90] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  }else
+  if (xP == 284) { // dot 91
+     if (dot[91] == 1) {  // Check if dot gobbled already
+        dot[91] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 448) { // dot 60
-     if (dot[60] == 1) {  // Check if dot gobbled already
-        dot[60] = 0; // Reset flag to Zero
+  if (xP == 332) { // dot 92
+     if (dot[92] == 1) {  // Check if dot gobbled already
+        dot[92] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 392) { // dot 93
+     if (dot[93] == 1) {  // Check if dot gobbled already
+        dot[93] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 448) { // dot 94
+     if (dot[94] == 1) {  // Check if dot gobbled already
+        dot[94] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score 
           // Turn Ghost Blue if Pacman eats Big Dots
         fruiteatenpacman = true; // Turn Ghost blue        
@@ -1843,150 +1998,234 @@ if (yP == 268) {  // if in Row 5  **********************************************
 
 } else
 if (yP == 288) {  // if in Row 6  **********************************************************
-  if (xP == 4) { // dot 61
-     if (dot[61] == 1) {  // Check if dot gobbled already
-        dot[61] = 0; // Reset flag to Zero
+  if (xP == 4) { // dot 95
+     if (dot[95] == 1) {  // Check if dot gobbled already
+        dot[95] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 28) { // dot 62
-     if (dot[62] == 1) {  // Check if dot gobbled already
-        dot[62] = 0; // Reset flag to Zero
+  if (xP == 28) { // dot 96
+     if (dot[96] == 1) {  // Check if dot gobbled already
+        dot[96] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 52) { // dot 63
-     if (dot[63] == 1) {  // Check if dot gobbled already
-        dot[63] = 0; // Reset flag to Zero
+  if (xP == 52) { // dot 97
+     if (dot[97] == 1) {  // Check if dot gobbled already
+        dot[97] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 74) { // dot 64
-     if (dot[64] == 1) {  // Check if dot gobbled already
-        dot[64] = 0; // Reset flag to Zero
+  if (xP == 74) { // dot 98
+     if (dot[98] == 1) {  // Check if dot gobbled already
+        dot[98] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 98) { // dot 65
-     if (dot[65] == 1) {  // Check if dot gobbled already
-        dot[65] = 0; // Reset flag to Zero
+  if (xP == 98) { // dot 99
+     if (dot[99] == 1) {  // Check if dot gobbled already
+        dot[99] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 120) { // dot 66
-     if (dot[66] == 1) {  // Check if dot gobbled already
-        dot[66] = 0; // Reset flag to Zero
+  if (xP == 120) { // dot 100
+     if (dot[100] == 1) {  // Check if dot gobbled already
+        dot[100] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 168) { // dot 67
-     if (dot[67] == 1) {  // Check if dot gobbled already
-        dot[67] = 0; // Reset flag to Zero
+  if (xP == 168) { // dot 101
+     if (dot[101] == 1) {  // Check if dot gobbled already
+        dot[101] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 192) { // dot 68
-     if (dot[68] == 1) {  // Check if dot gobbled already
-        dot[68] = 0; // Reset flag to Zero
+  if (xP == 192) { // dot 102
+     if (dot[102] == 1) {  // Check if dot gobbled already
+        dot[102] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 216) { // dot 69
-     if (dot[69] == 1) {  // Check if dot gobbled already
-        dot[69] = 0; // Reset flag to Zero
+  if (xP == 216) { // dot 103
+     if (dot[103] == 1) {  // Check if dot gobbled already
+        dot[103] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 238) { // dot 70
-     if (dot[70] == 1) {  // Check if dot gobbled already
-        dot[70] = 0; // Reset flag to Zero
+  if (xP == 238) { // dot 104
+     if (dot[104] == 1) {  // Check if dot gobbled already
+        dot[104] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 424) { // dot 71
-     if (dot[71] == 1) {  // Check if dot gobbled already
-        dot[71] = 0; // Reset flag to Zero
+  if (xP == 262) { // dot 105
+     if (dot[105] == 1) {  // Check if dot gobbled already
+        dot[105] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 448) { // dot 72
-     if (dot[72] == 1) {  // Check if dot gobbled already
-        dot[72] = 0; // Reset flag to Zero
+  if (xP == 284) { // dot 106
+     if (dot[106] == 1) {  // Check if dot gobbled already
+        dot[106] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
-  } 
+  }  else
+  if (xP == 332) { // dot 107
+     if (dot[107] == 1) {  // Check if dot gobbled already
+        dot[107] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 356) { // dot 108
+     if (dot[108] == 1) {  // Check if dot gobbled already
+        dot[108] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 380) { // dot 109
+     if (dot[109] == 1) {  // Check if dot gobbled already
+        dot[109] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 402) { // dot 110
+     if (dot[110] == 1) {  // Check if dot gobbled already
+        dot[110] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 424) { // dot 111
+     if (dot[111] == 1) {  // Check if dot gobbled already
+        dot[111] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (xP == 448) { // dot 112
+     if (dot[112] == 1) {  // Check if dot gobbled already
+        dot[112] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  }
 
 }   
 
-
+ 
 
 // Check Columns
 
 
 if (xP == 28) {  // if in Column 2
-  if (yP == 66) { // dot 32
-     if (dot[32] == 1) {  // Check if dot gobbled already
-        dot[32] = 0; // Reset flag to Zero
+  if (yP == 66) { // dot 48
+     if (dot[48] == 1) {  // Check if dot gobbled already
+        dot[48] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 86) { // dot 34
-     if (dot[34] == 1) {  // Check if dot gobbled already
-        dot[34] = 0; // Reset flag to Zero
+  if (yP == 86) { // dot 50
+     if (dot[50] == 1) {  // Check if dot gobbled already
+        dot[50] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 148) { // dot 36 was 108
-     if (dot[36] == 1) {  // Check if dot gobbled already
-        dot[36] = 0; // Reset flag to Zero
+  if (yP == 106) { // dot 52
+     if (dot[52] == 1) {  // Check if dot gobbled already
+        dot[52] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 126) { // dot 38
-     if (dot[38] == 1) {  // Check if dot gobbled already
-        dot[38] = 0; // Reset flag to Zero
+  if (yP == 126) { // dot 54
+     if (dot[54] == 1) {  // Check if dot gobbled already
+        dot[54] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 146) { // dot 40
-     if (dot[40] == 1) {  // Check if dot gobbled already
-        dot[40] = 0; // Reset flag to Zero
+  if (yP == 146) { // dot 56
+     if (dot[56] == 1) {  // Check if dot gobbled already
+        dot[56] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }   //************Add Larry **************   
+  }  else
+  if (yP == 166) { // dot 58
+     if (dot[58] == 1) {  // Check if dot gobbled already
+        dot[58] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
-  } 
+  } else
+  if (yP == 186) { // dot 60
+     if (dot[60] == 1) {  // Check if dot gobbled already
+        dot[60] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }    
+  } else
+  if (yP == 206) { // dot 62
+     if (dot[62] == 1) {  // Check if dot gobbled already
+        dot[62] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (yP == 226) { // dot 64
+     if (dot[64] == 1) {  // Check if dot gobbled already
+        dot[64] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }  // *************************** Done To Here *********************************   
+  }
 
 } else
 if (xP == 424) {  // if in Column 7
-  if (yP == 66) { // dot 33
-     if (dot[33] == 1) {  // Check if dot gobbled already
-        dot[33] = 0; // Reset flag to Zero
+  if (yP == 66) { // dot 49
+     if (dot[49] == 1) {  // Check if dot gobbled already
+        dot[49] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 86) { // dot 35
-     if (dot[35] == 1) {  // Check if dot gobbled already
-        dot[35] = 0; // Reset flag to Zero
+  if (yP == 86) { // dot 51
+     if (dot[51] == 1) {  // Check if dot gobbled already
+        dot[51] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 106) { // dot 37
-     if (dot[37] == 1) {  // Check if dot gobbled already
-        dot[37] = 0; // Reset flag to Zero
+  if (yP == 106) { // dot 53
+     if (dot[53] == 1) {  // Check if dot gobbled already
+        dot[53] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 126) { // dot 39
-     if (dot[39] == 1) {  // Check if dot gobbled already
-        dot[39] = 0; // Reset flag to Zero
+  if (yP == 126) { // dot 55
+     if (dot[55] == 1) {  // Check if dot gobbled already
+        dot[55] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 146) { // dot 41
-     if (dot[41] == 1) {  // Check if dot gobbled already
-        dot[41] = 0; // Reset flag to Zero
+  if (yP == 146) { // dot 57
+     if (dot[57] == 1) {  // Check if dot gobbled already
+        dot[57] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
      }     
-  } 
+  } else
+  if (yP == 166) { // dot 59
+     if (dot[59] == 1) {  // Check if dot gobbled already
+        dot[59] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (yP == 186) { // dot 61
+     if (dot[61] == 1) {  // Check if dot gobbled already
+        dot[61] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (yP == 206) { // dot 63
+     if (dot[63] == 1) {  // Check if dot gobbled already
+        dot[63] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  } else
+  if (yP == 226) { // dot 65
+     if (dot[65] == 1) {  // Check if dot gobbled already
+        dot[65] = 0; // Reset flag to Zero
+        pacmanscore++; // Increment pacman score       
+     }     
+  }// *************************** Done To Here *********************************
 } 
 
  
@@ -2972,8 +3211,8 @@ if (yG == 4) {  // if in Row 1 *************************************************
      if (dot[2] == 1) {  // Check if dot 2 gobbled already
 	  myGLCD.fillCircle(42, 19, 2); // dot 2
      }    
-      if (dot[19] == 1) {  // Check if dot 13 gobbled already
-  	myGLCD.fillCircle(19, 40, 7); // Big dot 13
+      if (dot[19] == 1) {  // Check if dot 19 gobbled already
+  	myGLCD.fillCircle(19, 40, 7); // Big dot 19
      }    
 
   } else
@@ -3615,17 +3854,13 @@ if (yG == 248) {  // if in Row 4  **********************************************
      }   
    
   } else
-  if (xG == 426) { // dot 84 +24
+  if (xG == 424) { // dot 84 +24
       if (dot[83] == 1) {  // Check if dot 83 gobbled already
     myGLCD.fillCircle(413, 260, 2); // Dot 83
      }    
       if (dot[85] == 1) {  // Check if dot 85 gobbled already
     myGLCD.fillCircle(459, 260, 2); // Dot 85
-     }      
-      if (dot[94] == 1) {  // Check if dot 94 gobbled already
-    myGLCD.fillCircle(465, 281, 7); // Big dot 94
-     }  
-  
+     }        
   } else
   if (xG == 448) { // dot 85 +22
    if (dot[84] == 1) {  // Check if dot 84 gobbled already
@@ -3891,11 +4126,11 @@ if (yG == 288) {  // if in Row 6  **********************************************
      }       
   } else
   if (xG == 424) { // dot 111
-     if (dot[70] == 1) {  // Check if dot 70 gobbled already
-    myGLCD.fillCircle(252, 221, 2); // dot 70
+     if (dot[110] == 1) {  // Check if dot 110 gobbled already
+    myGLCD.fillCircle(414, 301, 2);  // dot 110
      }  
-     if (dot[72] == 1) {  // Check if dot 72 gobbled already
-    myGLCD.fillCircle(298, 221, 2); // dot 72
+     if (dot[112] == 1) {  // Check if dot 112 gobbled already
+    myGLCD.fillCircle(460, 301, 2);  // dot 112
      }       
   } else
   if (xG == 448) { // dot 112
@@ -3947,19 +4182,19 @@ if (xG == 28) {  // if in Column 2
      }     
   } else
   if (yG == 146) { // dot 56
-     if (dot[38] == 1) {  // Check if dot 38 gobbled already
-	  myGLCD.fillCircle(42, 140, 2); // dot 38
+     if (dot[54] == 1) {  // Check if dot 54 gobbled already
+	  myGLCD.fillCircle(42, 140, 2); // Dot 54
      }     
-     if (dot[43] == 1) {  // Check if dot 43 gobbled already
-	  myGLCD.fillCircle(42, 181, 2); // dot 43
+     if (dot[58] == 1) {  // Check if dot 58 gobbled already
+	  myGLCD.fillCircle(42, 180, 2); // Dot 58
      } // ****************  Added more decisions Larry **************     
   } else
   if (yG == 166) { // dot 58
-      if (dot[54] == 1) {  // Check if dot 54 gobbled already
-   myGLCD.fillCircle(42, 140, 2); // Dot 54
+      if (dot[56] == 1) {  // Check if dot 56 gobbled already
+   myGLCD.fillCircle(42, 160, 2); // Dot 56
      } 
-      if (dot[58] == 1) {  // Check if dot 58 gobbled already
-    myGLCD.fillCircle(42, 180, 2); // Dot 58
+      if (dot[60] == 1) {  // Check if dot 60 gobbled already
+    myGLCD.fillCircle(42, 200, 2); // Dot 60
      }         
   } else
   if (yG == 186) { // dot 60
@@ -5135,29 +5370,50 @@ if((c1 == 0) && (c2 == 0) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear th
 // Reprint the dots that have not been gobbled
     myGLCD.setColor(200,200,200);
 // Row 4
-if ( dot[32] == 1) {
-  myGLCD.fillCircle(42, 80, 2);
+if ( dot[48] == 1) {
+  myGLCD.fillCircle(42, 80, 2); // Dot 48
 } 
 
 // Row 5
 
-if ( dot[34] == 1) {
-  myGLCD.fillCircle(42, 100, 2);
+if ( dot[50] == 1) {
+  myGLCD.fillCircle(42, 100, 2); // Dot 50
 }
 
 // Row 6
-if ( dot[36] == 1) {
-  myGLCD.fillCircle(42, 120, 2);
+if ( dot[52] == 1) {
+  myGLCD.fillCircle(42, 100, 2); // Dot 50
 }
 
 // Row 7
-if ( dot[38] == 1) {
-  myGLCD.fillCircle(42, 140, 2);
+if ( dot[54] == 1) {
+  myGLCD.fillCircle(42, 140, 2); // Dot 54
 }
 
 // Row 8
-if ( dot[40] == 1) {
-  myGLCD.fillCircle(42, 160, 2);
+if ( dot[56] == 1) {
+  myGLCD.fillCircle(42, 160, 2); // Dot 56
+}
+
+// Row 9
+
+if ( dot[58] == 1) {
+  myGLCD.fillCircle(42, 180, 2); // Dot 58
+}
+
+// Row 10
+if ( dot[60] == 1) {
+  myGLCD.fillCircle(42, 200, 2); // Dot 60
+}
+
+// Row 11
+if ( dot[62] == 1) {
+  myGLCD.fillCircle(42, 220, 2); // Dot 62
+}
+
+// Row 12
+if ( dot[64] == 1) {
+  myGLCD.fillCircle(42, 240, 2); // Dot 64
 }
 
 
@@ -5659,7 +5915,7 @@ if ( dot[93] == 1) {
   myGLCD.fillCircle(406, 281, 2);  
   }
 if ( dot[94] == 1) {
-  myGLCD.fillCircle(465, 281, 7); // Big dot 93
+  myGLCD.fillCircle(465, 281, 7); // Big dot 94
   } 
 
   // Row 15
@@ -5703,22 +5959,22 @@ if ( dot[106] == 1) {
 }
 //********** add dots for 480X320 Larry ******
 if ( dot[107] == 1) {
-  myGLCD.fillCircle(345, 301, 2);  // dot 106
+  myGLCD.fillCircle(345, 301, 2);  // dot 107
   }
 if ( dot[108] == 1) {
-  myGLCD.fillCircle(368, 301, 2);  // dot 107
+  myGLCD.fillCircle(368, 301, 2);  // dot 108
   }
 if ( dot[109] == 1) {
-  myGLCD.fillCircle(391, 301, 2);  // dot 108
+  myGLCD.fillCircle(391, 301, 2);  // dot 109
   }
 if ( dot[110] == 1) {
-  myGLCD.fillCircle(414, 301, 2);  // dot 109
+  myGLCD.fillCircle(414, 301, 2);  // dot 110
   }
 if ( dot[111] == 1) {
-  myGLCD.fillCircle(437, 301, 2);  // dot 110
+  myGLCD.fillCircle(437, 301, 2);  // dot 111
   }
 if ( dot[112] == 1) {
-  myGLCD.fillCircle(460, 301, 2);  // dot 111
+  myGLCD.fillCircle(460, 301, 2);  // dot 112
   }
 
 // TempTest delay
@@ -5788,9 +6044,10 @@ Redblock(424,168); //Out right door
 Redblock(424,248); // Meet bottom right doorway
 Redblock(448,248); // one up from Bottom right corner
 Redblock(448,288); // Bottom right corner
-//Redblock(394,168); 
-//Redblock(62,288);
 */
+// Dot 111 and 112
+Redblock(345,301); 
+Redblock(368,301);
 
 
 
