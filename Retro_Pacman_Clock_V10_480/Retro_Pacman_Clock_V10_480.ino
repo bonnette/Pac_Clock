@@ -6044,11 +6044,11 @@ Redblock(424,168); //Out right door
 Redblock(424,248); // Meet bottom right doorway
 Redblock(448,248); // one up from Bottom right corner
 Redblock(448,288); // Bottom right corner
-*/
+
 // Dot 111 and 112
 Redblock(345,301); 
 Redblock(368,301);
-
+*/
 
 
  }
