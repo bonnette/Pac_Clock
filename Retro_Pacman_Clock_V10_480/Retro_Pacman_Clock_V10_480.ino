@@ -144,7 +144,7 @@ int prevGD;  // Capture legacy direction to enable adequate blanking of trail
 int gdirect;   //  Random direction variable 
 
 // Declare global variables for previous time,  to enable refesh of only digits that have changed
-// There are four digits that bneed to be drawn independently to ensure consisitent positioning of time
+// There are four digits that need to be drawn independently to ensure consisitent positioning of time
   int c1 = 20;  // Tens hour digit
   int c2 = 20;  // Ones hour digit
   int c3 = 20;  // Tens minute digit
@@ -226,6 +226,8 @@ if (LDR <=120)   {
   myGLCD.printNumI(xG,228,200); // Print xP
   myGLCD.printNumI(yG,228,220); // Print yP
 */
+//Serial.println(dot[84]);
+
 dimscreen = (LDR/4)+5;
 
 if (dimscreen >= 255){
@@ -633,7 +635,7 @@ if (yP== 26) {  // if in Row 2  ************************************************
     myGLCD.fillCircle(344, 60, 2); // Dot 42
      }       
   } else
-    if (xP== 392) { // dot 26
+    if (xP== 394) { // dot 26
       if (dot[15] == 1) {  // Check if dot 15 gobbled already
     myGLCD.fillCircle(391, 19, 2);  // dot 15
      }      
@@ -1670,7 +1672,7 @@ if (yP == 26) {  // if in Row 2  ***********************************************
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 392) { // dot 26
+  if (xP == 394) { // dot 26
      if (dot[26] == 1) {  // Check if dot gobbled already
         dot[26] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
@@ -1981,7 +1983,7 @@ if (yP == 268) {  // if in Row 5  **********************************************
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (xP == 392) { // dot 93
+  if (xP == 394) { // dot 93
      if (dot[93] == 1) {  // Check if dot gobbled already
         dot[93] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
@@ -3802,7 +3804,11 @@ if (yG == 248) {  // if in Row 4  **********************************************
      }    
      if (dot[91] == 1) {  // Check if dot 91 gobbled already
 	  myGLCD.fillCircle(298, 281, 2);  // dot 91
-     }  // ************** Add Larry ******************    
+     }
+    if (dot[79] == 1) {  // Check if dot 79 gobbled already
+    myGLCD.fillCircle(321, 260, 2); // Dot 79
+     }  // ************** Add Larry ******************  
+       
   } else
   if (xG == 310) { // dot 79 +26
      if (dot[78] == 1) {  // Check if dot 78 gobbled already
@@ -3950,7 +3956,7 @@ if (yG == 268) {  // if in Row 5  **********************************************
      
   }else
   
-  if (xG == 392) { // dot 93
+  if (xG == 394) { // dot 93
      if (dot[82] == 1) {  // Check if dot 82 gobbled already
     myGLCD.fillCircle(390, 260, 2); // Dot 82
      }
@@ -5333,13 +5339,16 @@ if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first dig
 //    myGLCD.printNumI(d1,10,70); // Printing thisnumber impacts LFH walls so redraw impacted area   
     myGLCD.printNumI(d1,80,110); // Printing thisnumber impacts LFH walls so redraw impacted area   
 // ---------------- reprint two left wall pillars Larry
-//    myGLCD.setColor(1, 73, 240);
+    myGLCD.setColor(1, 73, 240);
     
 //    myGLCD.drawRoundRect(0, 80, 27, 105); 
 //    myGLCD.drawRoundRect(2, 85, 25, 100); 
-
+    myGLCD.drawRoundRect(0, 80, 27, 145); // New 480X320 diff 160 and 80 (80 was 120)
+    myGLCD.drawRoundRect(2, 125, 25, 140); 
 //    myGLCD.drawRoundRect(0, 140, 27, 165); 
-//    myGLCD.drawRoundRect(2, 145, 25, 160); 
+//    myGLCD.drawRoundRect(2, 145, 25, 160);
+    myGLCD.drawRoundRect(0, 250, 27, 178); 
+    myGLCD.drawRoundRect(2, 185, 25, 200); 
 
 // ---------------- Clear lines on Outside wall
     myGLCD.setColor(0,0,0);
