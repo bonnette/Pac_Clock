@@ -137,7 +137,7 @@ int prevD;  // Capture legacy direction to enable adequate blanking of trail
 int direct;   //  Random direction variable
 
 // Ghost coordinates of top LHS of 28x28 bitmap
-int xG = 448;
+int xG = 452;
 int yG = 148;
 int GD = 2;  // Ghost direction 0 = right, 1 = down, 2 = left, 3 = up
 int prevGD;  // Capture legacy direction to enable adequate blanking of trail
@@ -226,7 +226,6 @@ if (LDR <=120)   {
   myGLCD.printNumI(xG,228,200); // Print xP
   myGLCD.printNumI(yG,228,220); // Print yP
 */
-//Serial.println(dot[84]);
 
 dimscreen = (LDR/4)+5;
 
@@ -296,17 +295,17 @@ if ((fruitdrawn == false)&&(fruitgone == false)){ // draw fruit and set flag tha
     fruitdrawn = true;
 }  
 
-// Redraw fruit if Ghost eats fruit only if Ghost passesover 172 or 120 on the row 186
-if ((fruitdrawn == true)&&(fruitgone == false)&&(xG >= 168)&&(xG <= 170)&&(yG >= 168)&&(yG <= 180)){
+// Redraw fruit if Ghost eats fruit only if Ghost passesover 172 or 120 on the row 168
+if ((fruitdrawn == true)&&(fruitgone == false)&&(xG >= 262)&&(xG <= 264)&&(yG >= 248)&&(yG <= 260)){
     myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
 }
 
-if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 120)&&(yG == 168)){
+if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 192)&&(yG == 248)){
     myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
 }
 
 // Award Points if Pacman eats Big Dots
-if ((fruitdrawn == true)&&(fruitgone == false)&&(xP == 146)&&(yP == 168)){
+if ((fruitdrawn == true)&&(fruitgone == false)&&(xP == 228)&&(yP == 248)){
   fruitgone = true; // If Pacman eats fruit then fruit disappears  
   pacmanscore = pacmanscore + 5; //Increment pacman score 
 }
@@ -861,7 +860,7 @@ if (yP== 46) {  // if in Row 3  ************************************************
    } 
   }
 } else
-
+//delay(dly); // Larry Delay
 if (yP== 248) {  // if in Row 4  **********************************************************
   if (xP== 4) { // dot 66
      if (dot[86] == 1) {  // Check if dot 86 gobbled already
@@ -2141,7 +2140,7 @@ if (xP == 28) {  // if in Column 2
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 146) { // dot 56
+  if (yP == 148) { // dot 56
      if (dot[56] == 1) {  // Check if dot gobbled already
         dot[56] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
@@ -2198,7 +2197,7 @@ if (xP == 424) {  // if in Column 7
         pacmanscore++; // Increment pacman score       
      }     
   } else
-  if (yP == 146) { // dot 57
+  if (yP == 148) { // dot 57
      if (dot[57] == 1) {  // Check if dot gobbled already
         dot[57] = 0; // Reset flag to Zero
         pacmanscore++; // Increment pacman score       
@@ -3196,12 +3195,14 @@ if ((fruiteatenpacman == true)&&(abs(xG-xP)<=5)&&(abs(yG-yP)<=5)){
   dly = 28; // slowdown now only drawing one item
   }
   
-  
+
 if (ghostlost == false){ // only draw ghost if still alive
 
 drawGhost(xG,yG,GD,prevGD); // Draws Ghost at these coordinates
-
-
+/*Serial.println(xG);
+Serial.println(yG);
+Serial.println(" ");
+*/
 // If Ghost is on a dot then print the adjacent dots if they are valid
 
   myGLCD.setColor(200, 200, 200);
@@ -3359,7 +3360,7 @@ if (yG == 4) {  // if in Row 1 *************************************************
     myGLCD.fillCircle(437, 19, 2);  // dot 17
      }  
   }else 
-  if (xG == 426) { // dot 17 +24
+  if (xG == 424) { // dot 17 +24
       if (dot[16] == 1) {  // Check if dot 16 gobbled already
     myGLCD.fillCircle(414, 19, 2);  // dot 16 
      }    
@@ -3432,7 +3433,7 @@ if (yG == 26) {  // if in Row 2  ***********************************************
   	myGLCD.fillCircle(252, 60, 2); // dot 38
      }         
   } else  // **************** Larry Add to row 2 *********************** 
-  if (xG == 286) { // dot 24 +58
+  if (xG == 284) { // dot 24 +58
       if (dot[40] == 1) {  // Check if dot 40 gobbled already
   	myGLCD.fillCircle(298, 60, 2); // Dot 40
      }    
@@ -3440,7 +3441,7 @@ if (yG == 26) {  // if in Row 2  ***********************************************
   	myGLCD.fillCircle(298, 19, 2); // dot 12
      }  
   }else
-  if (xG == 346) { // dot 25 +60
+  if (xG == 332) { // dot 25 +60
       if (dot[42] == 1) {  // Check if dot 42 gobbled already
    myGLCD.fillCircle(344, 60, 2); // Dot 42
      }    
@@ -3449,7 +3450,7 @@ if (yG == 26) {  // if in Row 2  ***********************************************
      }  
   }
 }else
-    if (xG == 404) { // dot 26 +58
+    if (xG == 394) { // dot 26 +58
       if (dot[15] == 1) {  // Check if dot 15 gobbled already
     myGLCD.fillCircle(391, 19, 2);  // dot 15
      }      
@@ -3463,7 +3464,7 @@ if (yG == 26) {  // if in Row 2  ***********************************************
     myGLCD.fillCircle(413, 60, 2); // Dot 45
      }         
   } else
-  if (xG == 462) { // dot 27 +58
+  if (xG == 448) { // dot 27 +58
       if (dot[18] == 1) {  // Check if dot 18 gobbled already
    myGLCD.fillCircle(460, 19, 2);  // dot 18
      }    
@@ -3654,7 +3655,7 @@ if (yG == 46) {  // if in Row 3  ***********************************************
      }   
    
   } else
-  if (xG == 426) { // dot 46 +24
+  if (xG == 424) { // dot 46 +24
       if (dot[45] == 1) {  // Check if dot 45 gobbled already
     myGLCD.fillCircle(413, 60, 2); // Dot 45
      }    
@@ -4155,8 +4156,8 @@ if (yG == 288) {  // if in Row 6  **********************************************
 
 
 // Check Columns
-
-
+//delay(dly); // Larry Delay
+//    Serial.println("Got there");
 if (xG == 28) {  // if in Column 2
   if (yG == 66) { // dot 48
      if (dot[29] == 1) {  // Check if dot 29 gobbled already
@@ -4232,8 +4233,9 @@ if (xG == 28) {  // if in Column 2
   } 
 
 } else
-if (xG == 424) {  // if in Column 7
 
+if (xG == 424) {  // if in Column 7
+  
   if (yG == 66) { // dot 49
       if (dot[46] == 1) {  // Check if dot 46 gobbled already
   	myGLCD.fillCircle(436, 60, 2); // Dot 46
@@ -4256,6 +4258,7 @@ if (xG == 424) {  // if in Column 7
      }  
       if (dot[55] == 1) {  // Check if dot 55 gobbled already
   	myGLCD.fillCircle(435, 140, 2); // Dot 55
+    Serial.println("D53");
      }      
   } else
   if (yG == 126) { // dot 55
@@ -4517,7 +4520,7 @@ if(GD == 0){
       } else { GD = 3;}
     }
     // Past fourth block only option is up
-    if (xG == 284) { //HOLD 446
+    if (xG == 284) { 
          GD = 3; // set Ghost direction variable to new direction D where 0 = right, 1 = down, 2 = left, 3 = up
     }
 // ***************** larry mod ********************
@@ -4664,7 +4667,7 @@ else if(GD == 2){
   }
  
    // RHS Door Horizontal Row
-  if (yG == 148) { //was 108 
+  if (yG == 148) { 
 
     // Past upper doorway on left decide to go up or go down
     if (xG == 424) { 
