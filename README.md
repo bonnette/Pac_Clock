@@ -1,6 +1,6 @@
 # Arduino Mega Pacman Clock
 
-![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/IMG_2271.JPG)
+![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/pac_clock.jpg)
 
 This is modification of code from an Instructable by TechKiwiGadgets https://www.instructables.com/id/Retro-Pac-Man-Clock/
 The purpose of the modification is to allow the design work on an HX8357C 480X320 TFT display.
