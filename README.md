@@ -9,4 +9,5 @@ Additionally, because the display is not a touch display. Code will be added to 
 Above photo is a close up of the clock.
 <br />
 Below photo shows the clock and RTC module.
+<br />
 ![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/pac_clock_rtc.jpg)
