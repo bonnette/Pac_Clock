@@ -5498,12 +5498,12 @@ if((d2 != c2)||(xsetup == true)){
 
 // Third Digit
 if((d3 != c3)||(xsetup == true)){
-  myGLCD.printNumI(d3,203,110); // Was 145    
+  myGLCD.printNumI(d3,215,110); // Was 203   
 }
 
 // Fourth Digit
 if((d4 != c4)||(xsetup == true)){
-  myGLCD.printNumI(d4,284,110); // Was 205  
+  myGLCD.printNumI(d4,285,110); // Was 284  
 }
 
 if (xsetup == true){
