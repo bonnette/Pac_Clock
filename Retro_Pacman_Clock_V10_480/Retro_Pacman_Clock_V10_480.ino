@@ -5515,14 +5515,14 @@ if (xsetup == true){
       myGLCD.setBackColor(0, 0, 0);
       myGLCD.setFont(SmallFont);
   if (pm == 0) {
-      myGLCD.print("AM", 549, 187); // Fixed for 480X320
+      myGLCD.print("AM", 459, 187); // Fixed for 480X320
    } else {
       myGLCD.print("PM", 459, 187);  // Fixed for 480X320
    }
 
 // ----------- Alarm Set on LHS lower pillar
 if (alarmstatus == true) { // Print AS on fron screenleft hand side
-      myGLCD.print("AS", 7, 147); 
+      myGLCD.print("AS", 7, 186); 
 }
 
 
