@@ -182,7 +182,13 @@ void setup() {
 // Followed by connecting D9 of Arduino to Pin 19 of TFT via a 47 ohm resistor
    pinMode(9, OUTPUT); // D9 used to PWM voltage to backlight on TFT screen
    analogWrite(9, 255); // Controls brightness 0 is Dark, Ambient room is approx 25 and 70 is direct sunlight
-   
+
+// Set up time set buttons on Pin 7, 6 and 5
+// pin 7 is select, pin 8 is up, pin 9 is down
+pinMode(7, INPUT_PULLUP); // Select button
+pinMode(6, INPUT_PULLUP); // Up button
+pinMode(5, INPUT_PULLUP); // Down button
+
 // Randomseed will shuffle the random function
 randomSeed(analogRead(0));
 
@@ -233,7 +239,10 @@ if (dimscreen >= 255){
   dimscreen = 255;
   }
 analogWrite(9, dimscreen); // Controls brightness 0 is Dark, Ambient room is approx 25 and 70 is direct sunlight 
-  
+// Check Setup button
+bool setUpButton = digitalRead(7); // setup button  
+bool UpButton = digitalRead(8); // Up button
+bool DownButton = digitalRead(9); // Down button
   
 //Print scoreboard
 
@@ -295,8 +304,11 @@ if ((fruitdrawn == false)&&(fruitgone == false)){ // draw fruit and set flag tha
     fruitdrawn = true;
 }  
 
-// Redraw fruit if Ghost eats fruit only if Ghost passesover 262 or 264 on the row 248
-if ((fruitdrawn == true)&&(fruitgone == false)&&(xG >= 262)&&(xG <= 264)&&(yG >= 248)&&(yG <= 260)){
+// Redraw fruit if Ghost eats fruit only if Ghost passesover 216 or 238 on the row 248
+if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 192)&&(yG == 248)){
+    myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
+}
+if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 262)&&(yG == 248)){
     myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
 }
 // Redraw fruit on Ghost down motion
@@ -304,7 +316,7 @@ if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 228)&&(yG == 288)){
     myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
 }
 
-// Award Points if Pacman eats Big Dots
+// Award Points if Pacman eats Fruit
 if ((fruitdrawn == true)&&(fruitgone == false)&&(xP == 228)&&(yP == 248)){
   fruitgone = true; // If Pacman eats fruit then fruit disappears  
   pacmanscore = pacmanscore + 5; //Increment pacman score 
@@ -381,7 +393,9 @@ if ((alarmstatus == true)&&(soundalarm==true)){ // Set off a counter and take ac
  // ******* Enter Setup Mode *********
  // **********************************
  
-    if (((xT>=120) && (xT<=200) && (yT>=105) && (yT<=140)) &&  (soundalarm !=true)) { // Call Setup Routine if alarm is not sounding
+//    if (((xT>=120) && (xT<=200) && (yT>=105) && (yT<=140)) &&  (soundalarm !=true)) { // Call Setup Routine if alarm is not sounding
+      if (setUpButton == LOW){
+        setUpButton = HIGH;
         xsetup = true;  // Toggle flag
         clocksetup(); // Call Clock Setup Routine 
         UpdateDisp(); // update value to clock
