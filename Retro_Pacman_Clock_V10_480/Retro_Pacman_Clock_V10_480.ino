@@ -4048,7 +4048,7 @@ if (yG == 288) {  // if in Row 6  **********************************************
 	  myGLCD.fillCircle(19, 281, 7); // Big dot 86
      } 
      if (dot[96] == 1) {  // Check if dot 96 gobbled already
-	  myGLCD.fillCircle(42, 221, 2); // dot 62
+	  myGLCD.fillCircle(42, 301, 2); // Dot 96
      }    
   } else
   if (xG == 28) { // dot 96
