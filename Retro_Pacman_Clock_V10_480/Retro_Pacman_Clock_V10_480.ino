@@ -5645,13 +5645,13 @@ void drawscreen() {
         
 //        myGLCD.drawRoundRect(292, 80, 319, 105); 
 //        myGLCD.drawRoundRect(294, 85, 317, 100); //Old = 320X240
-        myGLCD.drawRoundRect(452, 80, 479, 145); 
-        myGLCD.drawRoundRect(454, 125, 477, 140);
+        myGLCD.drawRoundRect(454, 80, 479, 145); 
+        myGLCD.drawRoundRect(456, 125, 477, 140);
 
 //        myGLCD.drawRoundRect(292, 140, 319, 165); 
 //        myGLCD.drawRoundRect(294, 145, 317, 160);  
-        myGLCD.drawRoundRect(452, 246, 479, 178); 
-        myGLCD.drawRoundRect(454, 185, 477, 200); 
+        myGLCD.drawRoundRect(454, 246, 479, 178); 
+        myGLCD.drawRoundRect(456, 185, 477, 200); 
 
 // ---------------- Clear lines on Outside wall
         myGLCD.setColor(0,0,0);
