@@ -914,7 +914,6 @@ if (yP== 46) {  // if in Row 3  ************************************************
    } 
   }
 } else
-//delay(dly); // Larry Delay
 if (yP== 248) {  // if in Row 4  **********************************************************
   if (xP== 4) { // dot 66
      if (dot[86] == 1) {  // Check if dot 86 gobbled already
@@ -3305,16 +3304,16 @@ if (yG == 4) {  // if in Row 1 *************************************************
      }    
   } else
   if (xG == 98) { // dot 5 +24
-     if (dot[4] == 1) {  // Check if dot 3 gobbled already
+     if (dot[4] == 1) {  // Check if dot 4 gobbled already
   	myGLCD.fillCircle(88, 19, 2); // dot 4
      }    
-      if (dot[6] == 1) {  // Check if dot 5 gobbled already
+      if (dot[6] == 1) {  // Check if dot 6 gobbled already
   	myGLCD.fillCircle(136, 19, 2); // dot 6
      }     
   } else
   if (xG == 120) { // dot 6 +22
      if (dot[5] == 1) {  // Check if dot 5 gobbled already
-  	myGLCD.fillCircle(136, 19, 2); // dot 5
+  	myGLCD.fillCircle(112, 19, 2); // dot 5
      }    
       if (dot[21] == 1) {  // Check if dot 21 gobbled already
   	myGLCD.fillCircle(136, 40, 2);  // dot 21
@@ -3502,8 +3501,7 @@ if (yG == 26) {  // if in Row 2  ***********************************************
       if (dot[13] == 1) {  // Check if dot 13 gobbled already
     myGLCD.fillCircle(345, 19, 2);  // dot 13
      }  
-  }
-}else
+  }else
     if (xG == 394) { // dot 26 +58
       if (dot[15] == 1) {  // Check if dot 15 gobbled already
     myGLCD.fillCircle(391, 19, 2);  // dot 15
@@ -3524,9 +3522,11 @@ if (yG == 26) {  // if in Row 2  ***********************************************
      }    
       if (dot[47] == 1) {  // Check if dot 47 gobbled already
     myGLCD.fillCircle(459, 60, 2); //Dot 47
-     }         
-  } else
+     }
+  }          
+} else
 if (yG == 46) {  // if in Row 3  **********************************************************
+//    Serial.println("Got there 1");
   if (xG == 4) { // dot 28
      if (dot[19] == 1) {  // Check if dot 19 gobbled already
 	  myGLCD.fillCircle(19, 40, 7); // Big dot 19
@@ -3657,9 +3657,9 @@ if (yG == 46) {  // if in Row 3  ***********************************************
    if (dot[41] == 1) {  // Check if dot 41 gobbled already
    myGLCD.fillCircle(321, 60, 2); // Dot 41
      } 
-  }
-} else
+  } else
   if (xG == 310) { // dot 41 +26
+//     Serial.println("Got there 2");
      if (dot[40] == 1) {  // Check if dot 40 gobbled already
     myGLCD.fillCircle(298, 60, 2); // Dot 40
      }    
@@ -3728,8 +3728,8 @@ if (yG == 46) {  // if in Row 3  ***********************************************
    if (dot[27] == 1) {  // Check if dot 27 gobbled already
     myGLCD.fillCircle(465, 40, 7); // Big dot 27
    } 
-  }else
- 
+  }
+} else
 if (yG == 248) {  // if in Row 4  **********************************************************
   if (xG == 4) { // dot 66
      if (dot[86] == 1) {  // Check if dot 86 gobbled already
