@@ -5407,7 +5407,7 @@ if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first dig
     myGLCD.drawRoundRect(2, 125, 25, 140); 
 //    myGLCD.drawRoundRect(0, 140, 27, 165); 
 //    myGLCD.drawRoundRect(2, 145, 25, 160);
-    myGLCD.drawRoundRect(0, 250, 27, 178); 
+    myGLCD.drawRoundRect(0, 246, 27, 178); 
     myGLCD.drawRoundRect(2, 185, 25, 200); 
 
 // ---------------- Clear lines on Outside wall
@@ -5640,7 +5640,7 @@ void drawscreen() {
 
 //        myGLCD.drawRoundRect(0, 140, 27, 165); //Old
 //        myGLCD.drawRoundRect(2, 145, 25, 160); 
-        myGLCD.drawRoundRect(0, 250, 27, 178); 
+        myGLCD.drawRoundRect(0, 246, 27, 178); 
         myGLCD.drawRoundRect(2, 185, 25, 200); 
         
 //        myGLCD.drawRoundRect(292, 80, 319, 105); 
@@ -5650,7 +5650,7 @@ void drawscreen() {
 
 //        myGLCD.drawRoundRect(292, 140, 319, 165); 
 //        myGLCD.drawRoundRect(294, 145, 317, 160);  
-        myGLCD.drawRoundRect(452, 250, 479, 178); 
+        myGLCD.drawRoundRect(452, 246, 479, 178); 
         myGLCD.drawRoundRect(454, 185, 477, 200); 
 
 // ---------------- Clear lines on Outside wall
