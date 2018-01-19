@@ -295,12 +295,12 @@ if ((fruitdrawn == false)&&(fruitgone == false)){ // draw fruit and set flag tha
     fruitdrawn = true;
 }  
 
-// Redraw fruit if Ghost eats fruit only if Ghost passesover 172 or 120 on the row 168
+// Redraw fruit if Ghost eats fruit only if Ghost passesover 262 or 264 on the row 248
 if ((fruitdrawn == true)&&(fruitgone == false)&&(xG >= 262)&&(xG <= 264)&&(yG >= 248)&&(yG <= 260)){
     myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
 }
-
-if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 192)&&(yG == 248)){
+// Redraw fruit on Ghost down motion
+if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 228)&&(yG == 288)){
     myGLCD.drawBitmap (229, 319, 28, 28, fruit); //   draw fruit  
 }
 
