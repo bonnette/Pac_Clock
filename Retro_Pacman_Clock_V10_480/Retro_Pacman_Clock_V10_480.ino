@@ -104,6 +104,9 @@ boolean screenPressed = false;
 int xT,yT;
 int userT = 4; // flag to indicate directional touch on screen
 boolean setupscreen = false; // used to access the setup screen
+boolean setupButton = HIGH;
+boolean UpButton = HIGH;
+
 
 // Fruit flags
 boolean fruitgone = false;
@@ -183,11 +186,10 @@ void setup() {
    pinMode(9, OUTPUT); // D9 used to PWM voltage to backlight on TFT screen
    analogWrite(9, 255); // Controls brightness 0 is Dark, Ambient room is approx 25 and 70 is direct sunlight
 
-// Set up time set buttons on Pin 7, 6 and 5
-// pin 7 is select, pin 8 is up, pin 9 is down
+// Set time set buttons on Pin 7 and 8
+// pin 7 is select, pin 8 is up/down
 pinMode(7, INPUT_PULLUP); // Select button
-pinMode(6, INPUT_PULLUP); // Up button
-pinMode(5, INPUT_PULLUP); // Down button
+pinMode(8, INPUT_PULLUP); // Up button
 
 // Randomseed will shuffle the random function
 randomSeed(analogRead(0));
@@ -206,6 +208,11 @@ randomSeed(analogRead(0));
 }
 
 void loop() {
+
+// Check Buttons
+setupButton = digitalRead(7); // setup button  
+UpButton = digitalRead(8); // Up button
+
 
 // Set Screen Brightness
 // Check the ambient light and adjust LED brightness to suit Ambient approx 500 dark is below 100
@@ -239,10 +246,6 @@ if (dimscreen >= 255){
   dimscreen = 255;
   }
 analogWrite(9, dimscreen); // Controls brightness 0 is Dark, Ambient room is approx 25 and 70 is direct sunlight 
-// Check Setup button
-bool setUpButton = digitalRead(7); // setup button  
-bool UpButton = digitalRead(8); // Up button
-bool DownButton = digitalRead(9); // Down button
   
 //Print scoreboard
 
@@ -370,9 +373,10 @@ if ((alarmstatus == true)&&(soundalarm==true)){ // Set off a counter and take ac
 // Check if user input to touch screen
 // UserT sets direction 0 = right, 1 = down, 2 = left, 3 = up, 4 = no touch input
 
-
+// Setup button pressed 
      myTouch.read();
- if (myTouch.dataAvailable() && !screenPressed) {
+// if (myTouch.dataAvailable() && !screenPressed)
+ if (setupButton == LOW){
     xT = myTouch.getX();
     yT = myTouch.getY();        
     // Capture direction request from user
@@ -394,8 +398,8 @@ if ((alarmstatus == true)&&(soundalarm==true)){ // Set off a counter and take ac
  // **********************************
  
 //    if (((xT>=120) && (xT<=200) && (yT>=105) && (yT<=140)) &&  (soundalarm !=true)) { // Call Setup Routine if alarm is not sounding
-      if (setUpButton == LOW){
-        setUpButton = HIGH;
+      if (setupButton == LOW){
+        setupButton = HIGH;
         xsetup = true;  // Toggle flag
         clocksetup(); // Call Clock Setup Routine 
         UpdateDisp(); // update value to clock
@@ -4326,7 +4330,6 @@ if (xG == 424) {  // if in Column 7
      }  
       if (dot[55] == 1) {  // Check if dot 55 gobbled already
   	myGLCD.fillCircle(435, 140, 2); // Dot 55
-    Serial.println("D53");
      }      
   } else
   if (yG == 126) { // dot 55
@@ -6327,6 +6330,11 @@ myGLCD.setColor(0, 255, 0); //Set color to red
 myGLCD.fillRect(x,y,(x+5),(y+5)); //add 5 for small block
 }
 
+void Blackblock(int x,int y){
+myGLCD.setColor(0, 0, 0); //Set color to red
+myGLCD.fillRect(x,y,(x+5),(y+5)); //add 5 for small block
+}
+
 //**********************************************************************************************************
 //====== Draws the Ghost - bitmap
 void drawGhost(int x, int y, int d, int pd) {
@@ -6434,7 +6442,6 @@ if (pd == 2){ // Legacy direction Left
  // Use up down arrows to change time and alrm settings
 
  void clocksetup(){
- 
 int timehour = hour();
 int timeminute = minute();
 
@@ -6514,10 +6521,28 @@ if (mspacman == false) {
     myGLCD.drawBitmap (154, 208, 28, 28, ms_r_o_pacman); //   Closed Ghost  
 }
 // Begin Loop here
-
+int trackSetButton=0;
 while (xsetup == true){
 
+setupButton = digitalRead(7); // Read setup button
+UpButton = digitalRead(8); // Read number Up Down button
 
+   if (setupButton == LOW) {
+    UpButton = HIGH; // set number up/down button to high
+    trackSetButton++;
+    if (trackSetButton == 1){Redblock(132,35);} // Hour (+) selected
+    else if (trackSetButton == 2){
+      Blackblock(132,35); 
+      Redblock(132,80);} // Hour (-) selected
+    else if (trackSetButton == 3){
+      Blackblock(132,80); 
+      Redblock(180,35);} // Minute (+) selected
+    else if (trackSetButton == 4){
+      Blackblock(180,35); 
+      Redblock(180,80);} // Minute (-) selected
+    }
+   myGLCD.setColor(255, 255, 0); // set color back to yellow
+   
    if (alarmstatus == true){ // flag where false is off and true is on
     myGLCD.print("SET", 220, 160);
  } else {
@@ -6584,17 +6609,21 @@ while (xsetup == true){
     yT = myTouch.getY();        
 
     // Capture input command from user
-    if ((xT>=230) && (xT<=319) && (yT>=200) && (yT<=239)) { // (243, 210, 310, 230)  Exit Button
+//    if ((xT>=230) && (xT<=319) && (yT>=200) && (yT<=239))
+      if ((setupButton == LOW) && (trackSetButton == 99)){ // (243, 210, 310, 230)  Exit Button
+        setupButton = HIGH;
         xsetup = false; // Exit setupmode   
     } 
     
-    else if ((xT>=0) && (xT<=90) && (yT>=200) && (yT<=239)) { // (243, 210, 310, 230)  Save Alarm and Time Button
+//    else if ((xT>=0) && (xT<=90) && (yT>=200) && (yT<=239)) 
+      else if ((setupButton == LOW) && (trackSetButton == 5)){ // (243, 210, 310, 230)  Save Alarm and Time Button
         savetimealarm = true; // Exit and save time and alarm
         xsetup = false; // Exit setupmode    
       }  
     
     
-    else if ((xT>=130) && (xT<=154) && (yT>=12) && (yT<=57)) { // Time Hour +  (132, 35, 152, 55)
+//    else if ((xT>=130) && (xT<=154) && (yT>=12) && (yT<=57)) 
+      else if ((UpButton == LOW) && (trackSetButton == 1)){ // Time Hour +  (132, 35, 152, 55)
         timehour = timehour + 1; // Increment Hour
         if (timehour == 24) {  // reset hour to 0 hours if 24
            timehour = 0 ;
@@ -6602,7 +6631,8 @@ while (xsetup == true){
       } 
     } 
 
-    else if ((xT>=130) && (xT<=154) && (yT>=78) && (yT<=102)) { // (132, 80, 152, 100); // time hour -
+//    else if ((xT>=130) && (xT<=154) && (yT>=78) && (yT<=102)) 
+      else if ((UpButton == LOW) && (trackSetButton == 2)){ // (132, 80, 152, 100); // time hour -
         timehour = timehour - 1; // Increment Hour
         if (timehour == -1) {  // reset hour to 23 hours if < 0
            timehour = 23 ;
@@ -6610,14 +6640,16 @@ while (xsetup == true){
       } 
     }
     
-    else if ((xT>=178) && (xT<=202) && (yT>=12) && (yT<=57)) { // Time Minute +  (180, 35, 200, 55)
+//    else if ((xT>=178) && (xT<=202) && (yT>=12) && (yT<=57)) 
+      else if ((UpButton == LOW) && (trackSetButton == 3)){ // Time Minute +  (180, 35, 200, 55)
         timeminute = timeminute + 1; // Increment Hour
         if (timeminute == 60) {  // reset minute to 0 minutes if 60
            timeminute = 0 ;
         }
       } 
 
-    else if ((xT>=178) && (xT<=202) && (yT>=78) && (yT<=102)) { // (180, 80, 200, 100); // time minute - 
+//    else if ((xT>=178) && (xT<=202) && (yT>=78) && (yT<=102)) 
+      else if ((UpButton == LOW) && (trackSetButton == 4)){ // (180, 80, 200, 100); // time minute - 
         timeminute = timeminute - 1; // Decrement Hour
         if (timeminute == -1) {  // reset minute to 0 minutes if 60
            timeminute = 59 ;
