@@ -104,6 +104,7 @@ boolean screenPressed = false;
 int xT,yT;
 int userT = 4; // flag to indicate directional touch on screen
 boolean setupscreen = false; // used to access the setup screen
+// Added flags for ph
 boolean setupButton = HIGH;
 boolean UpButton = HIGH;
 
@@ -209,7 +210,7 @@ randomSeed(analogRead(0));
 
 void loop() {
 
-// Check Buttons
+// Check physical Buttons
 setupButton = digitalRead(7); // setup button  
 UpButton = digitalRead(8); // Up button
 
@@ -6524,22 +6525,31 @@ if (mspacman == false) {
 int trackSetButton=0;
 while (xsetup == true){
 
-setupButton = digitalRead(7); // Read setup button
-UpButton = digitalRead(8); // Read number Up Down button
-
+setupButton = digitalRead(7); // Read physical setup button
+UpButton = digitalRead(8); // Read physical number Up / Down button
+// Cycle through the button selections
    if (setupButton == LOW) {
-    UpButton = HIGH; // set number up/down button to high
     trackSetButton++;
+    UpButton = HIGH; // set number up/down button to high
     if (trackSetButton == 1){Redblock(132,35);} // Hour (+) selected
     else if (trackSetButton == 2){
-      Blackblock(132,35); 
+      Blackblock(132,35); // Blank Last Dot 
       Redblock(132,80);} // Hour (-) selected
     else if (trackSetButton == 3){
-      Blackblock(132,80); 
+      Blackblock(132,80); // Blank Last Dot 
       Redblock(180,35);} // Minute (+) selected
-    else if (trackSetButton == 4){
-      Blackblock(180,35); 
+    else if (trackSetButton == 4 ){
+      Blackblock(180,35); // Blank Last Dot 
       Redblock(180,80);} // Minute (-) selected
+    else if (trackSetButton == 5){
+      Blackblock(180,80); // Blank Last Dot 
+      Redblock(10,210);} // Save selected
+    else if (trackSetButton == 6){
+      Blackblock(10,210); // Blank Last Dot 
+      Redblock(245,210);} // Exit selected
+    else if (trackSetButton == 7) {
+      Blackblock(245,210);
+      trackSetButton = 0;}
     }
    myGLCD.setColor(255, 255, 0); // set color back to yellow
    
@@ -6610,13 +6620,14 @@ UpButton = digitalRead(8); // Read number Up Down button
 
     // Capture input command from user
 //    if ((xT>=230) && (xT<=319) && (yT>=200) && (yT<=239))
-      if ((setupButton == LOW) && (trackSetButton == 99)){ // (243, 210, 310, 230)  Exit Button
+      if ((UpButton == LOW) && (trackSetButton == 6)){ // (243, 210, 310, 230)  Exit Button
         setupButton = HIGH;
         xsetup = false; // Exit setupmode   
     } 
     
 //    else if ((xT>=0) && (xT<=90) && (yT>=200) && (yT<=239)) 
-      else if ((setupButton == LOW) && (trackSetButton == 5)){ // (243, 210, 310, 230)  Save Alarm and Time Button
+      else if ((UpButton == LOW) && (trackSetButton == 5)){ // (243, 210, 310, 230)  Save Alarm and Time Button
+        setupButton = HIGH;
         savetimealarm = true; // Exit and save time and alarm
         xsetup = false; // Exit setupmode    
       }  
