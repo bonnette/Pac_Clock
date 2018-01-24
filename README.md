@@ -1,5 +1,5 @@
 # Arduino Mega Pacman Clock
-![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/pac_clock.jpg)
+![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/photos/pac_clock.jpg)
 <br/>
 There are more photos and information in the WIKI section of this repository
 <br/>
@@ -12,4 +12,4 @@ Above photo is a close up of the clock.
 <br />
 Below photo shows the clock and RTC module.
 <br />
-![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/pac_clock_rtc.jpg)
+![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/photos/pac_clock_rtc.jpg)
