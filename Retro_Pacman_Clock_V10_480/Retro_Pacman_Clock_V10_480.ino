@@ -129,7 +129,7 @@ int ghostscore = 0;
 int dly = 18; // Orignally 30
 
 // Time Refresh counter 
-int rfcvalue = 900; // wait this long untiul check time for changes
+int rfcvalue = 900; // wait this long until check time for changes
 int rfc = 1;
 
 // Pacman coordinates of top LHS of 28x28 bitmap
@@ -5406,7 +5406,7 @@ if (h>=12){ // Set
 // *************************************************************************
 // Print each digit if it has changed to reduce screen impact/flicker
 
-// Set digit font colour to white
+// Set digit font color to white
 
   myGLCD.setColor(255, 255, 255);
   myGLCD.setBackColor(0, 0, 0);
@@ -5414,8 +5414,8 @@ if (h>=12){ // Set
   
 // First Digit
 if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first digit position
-//    myGLCD.printNumI(d1,10,70); // Printing thisnumber impacts LFH walls so redraw impacted area   
-    myGLCD.printNumI(d1,80,110); // Printing thisnumber impacts LFH walls so redraw impacted area   
+//    myGLCD.printNumI(d1,10,70); // Printing this number impacts LFH walls so redraw impacted area   
+    myGLCD.printNumI(d1,80,110); // Printing this number impacts LFH walls so redraw impacted area   
 // ---------------- reprint two left wall pillars Larry
     myGLCD.setColor(1, 73, 240);
     
@@ -5441,7 +5441,8 @@ if(((d1 != c1)||(xsetup == true))&&(d1 != 0)){ // Do not print zero in first dig
 if((c1 == 1) && (c2 == 2) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear the previouis First Digit and redraw wall
 
     myGLCD.setColor(0,0,0);
-    myGLCD.fillRect(50, 70, 70, 165);
+//    myGLCD.fillRect(50, 70, 70, 165);
+    myGLCD.fillRect(120, 110, 140, 205);
 
 
 }
@@ -5449,11 +5450,13 @@ if((c1 == 1) && (c2 == 2) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear th
 if((c1 == 0) && (c2 == 0) && (c3 == 5) && (c4 == 9) && (d2 != c2) ){ // Clear the previouis First Digit and redraw wall
 
     myGLCD.setColor(0,0,0);
-    myGLCD.fillRect(50, 70, 70, 165);
+//    myGLCD.fillRect(50, 70, 70, 165);
+    myGLCD.fillRect(120, 110, 140, 205);
 
 
 }
-
+//Redblock(120,110);
+//Greenblock(140,205);
 // Reprint the dots that have not been gobbled
     myGLCD.setColor(200,200,200);
 // Row 4
