@@ -10,6 +10,9 @@ Additionally, because the display is not a touch display. Code has been added to
 <br />
 The above photo is the clock in a 3d printed case. <br/>I will release the 3d design for the case on Thingiverse.com in the near future.
 <br />
-The below photo shows the clock and RTC module.
+The below photo shows the clock and RTC module.<br/>
+Very bottom is a photo of the clock with larger font.
 <br /><br />
 ![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/photos/pac_clock_rtc.jpg)
+<br /><br />
+![Client Photo](https://github.com/bonnette/Pac_Clock/blob/master/photos/pac_clock_LF.jpg)
