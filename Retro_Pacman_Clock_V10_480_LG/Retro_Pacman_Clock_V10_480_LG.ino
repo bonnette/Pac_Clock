@@ -6581,7 +6581,7 @@ UpButton = digitalRead(8); // Read physical number Up / Down button
       myGLCD.printNumI(timehour, 146, 60);      
       } 
 
-//    myGLCD.print(":", 150, 80);       
+    myGLCD.print(":", 160, 60);       
 
  if(timeminute>=10){ // Annoyingly if number less than 10 doesnt print on RHS and misses zero so need to compensate
       myGLCD.printNumI(timeminute, 175, 60);   // If >= 10 just print minute
@@ -6606,7 +6606,7 @@ UpButton = digitalRead(8); // Read physical number Up / Down button
 
 
 
-//    myGLCD.print(":", 160, 160);       
+    myGLCD.print(":", 160, 160);       
 
  if(alarmminute>=10){ // Annoyingly if number less than 10 doesnt print on RHS and misses zero so need to compensate
       myGLCD.printNumI(alarmminute, 175, 160);   // If >= 10 just print minute
