@@ -304,29 +304,29 @@ if (pacmanscore >= 10){
   // Draw fruit
 if ((fruitdrawn == false)&&(fruitgone == false)){ // draw fruit and set flag that fruit present so its not drawn again
 //    myGLCD.drawBitmap (146, 168, 28, 28, fruit); //   draw fruit 
-    myGLCD.drawBitmap (229, 317, 28, 28, fruit); //   draw fruit 
+    myGLCD.drawBitmap (230, 248, 28, 28, fruit); //   draw fruit 
     fruitdrawn = true;
 }  
 
 // Redraw fruit if Ghost eats fruit only if Ghost passesover 216 or 238 on the row 248
 if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 192)&&(yG == 248)){
-    myGLCD.drawBitmap (229, 317, 28, 28, fruit); //   draw fruit  
+    myGLCD.drawBitmap (230, 248, 28, 28, fruit); //   draw fruit
 }
+
 if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 262)&&(yG == 248)){
-    myGLCD.drawBitmap (229, 317, 28, 28, fruit); //   draw fruit  
+    myGLCD.drawBitmap (230, 248, 28, 28, fruit); //   draw fruit 
 }
+
 // Redraw fruit on Ghost down motion
 if ((fruitdrawn == true)&&(fruitgone == false)&&(xG == 228)&&(yG == 288)){
-    myGLCD.drawBitmap (229, 317, 28, 28, fruit); //   draw fruit  
+    myGLCD.drawBitmap (230, 248, 28, 28, fruit); //   draw fruit 
 }
 
 // Award Points if Pacman eats Fruit
 if ((fruitdrawn == true)&&(fruitgone == false)&&(xP == 228)&&(yP == 248)){
   fruitgone = true; // If Pacman eats fruit then fruit disappears  
-  pacmanscore = pacmanscore + 5; //Increment pacman score 
+  pacmanscore = pacmanscore + 5; //Increment pacman score
 }
-
-
 
 
 
