@@ -15,7 +15,7 @@
  V10 
  - Finally Retro PacMan Dots added and traditional gameplay- enjoy!!
  *****************************************************
- *Modified by Larry Bonnette for use with 480X320 TFT
+ *Modified by Larry Bonnette for use with a non touch capable 480X320 TFT
  *****************************************************
 */
  
